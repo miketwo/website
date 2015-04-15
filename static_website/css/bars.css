@@ -1,0 +1,85 @@
+
+        .git {
+            width: 94%;
+            -moz-animation: git 2.73160194645s ease;
+            -webkit-animation: git 2.73160194645s ease;
+        }
+        @-moz-keyframes git {
+          0%   { width: 0px;  }
+          94% { width: 94%;  }
+        }
+        @-webkit-keyframes git {
+          0%   { width: 0px;  }
+          94% { width: 94%;  }
+        }
+        
+        .python {
+            width: 98%;
+            -moz-animation: python 3.75507056376s ease;
+            -webkit-animation: python 3.75507056376s ease;
+        }
+        @-moz-keyframes python {
+          0%   { width: 0px;  }
+          98% { width: 98%;  }
+        }
+        @-webkit-keyframes python {
+          0%   { width: 0px;  }
+          98% { width: 98%;  }
+        }
+        
+        .unittest {
+            width: 95%;
+            -moz-animation: unittest 2.58751661917s ease;
+            -webkit-animation: unittest 2.58751661917s ease;
+        }
+        @-moz-keyframes unittest {
+          0%   { width: 0px;  }
+          95% { width: 95%;  }
+        }
+        @-webkit-keyframes unittest {
+          0%   { width: 0px;  }
+          95% { width: 95%;  }
+        }
+        
+        .django {
+            width: 87%;
+            -moz-animation: django 1.67078113835s ease;
+            -webkit-animation: django 1.67078113835s ease;
+        }
+        @-moz-keyframes django {
+          0%   { width: 0px;  }
+          87% { width: 87%;  }
+        }
+        @-webkit-keyframes django {
+          0%   { width: 0px;  }
+          87% { width: 87%;  }
+        }
+        
+        .ansible {
+            width: 90%;
+            -moz-animation: ansible 1.69818632483s ease;
+            -webkit-animation: ansible 1.69818632483s ease;
+        }
+        @-moz-keyframes ansible {
+          0%   { width: 0px;  }
+          90% { width: 90%;  }
+        }
+        @-webkit-keyframes ansible {
+          0%   { width: 0px;  }
+          90% { width: 90%;  }
+        }
+        
+        .jenkins {
+            width: 93%;
+            -moz-animation: jenkins 4.4031142582s ease;
+            -webkit-animation: jenkins 4.4031142582s ease;
+        }
+        @-moz-keyframes jenkins {
+          0%   { width: 0px;  }
+          93% { width: 93%;  }
+        }
+        @-webkit-keyframes jenkins {
+          0%   { width: 0px;  }
+          93% { width: 93%;  }
+        }
+        

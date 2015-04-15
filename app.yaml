@@ -1,13 +1,32 @@
-application: hello-django-app-engine
+application: my-gae-website
 version: 1
 runtime: python27
 api_version: 1
-threadsafe: true
+threadsafe: yes
 
 handlers:
-- url: .*
-  script: myproject.wsgi.application
+#root
+- url: /
+  static_files: static_website/index.html
+  upload: static_website/index.html
+
+#serve home page in case index.html is requested
+- url: /index.html
+  static_files: static_website/index.html
+  upload: static_website/index.html
+
+#all static files return file if found,
+#otherwise the default 404 page so it can be handled by sites that link
+#directly to images.
+- url: /(.*\.(gif|png|jpg|ico|bmp|css|otf|eot|svg|ttf|woff|js|pdf))
+  static_files: static_website/\1
+  upload: static_website/(.*\.(gif|png|jpg|ico|bmp|css|otf|eot|svg|ttf|woff|js|pdf))
+
+#all other urls: return the 404 not found
+- url: /.*
+  static_files: static_website/not_found.html
+  upload: static_website/not_found.html
 
 libraries:
-- name: django
-  version: 1.5
+- name: webapp2
+  version: "2.5.2"
