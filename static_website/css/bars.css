@@ -1,8 +1,22 @@
 
+        .c {
+            width: 82%;
+            -moz-animation: c 2.50017540242s ease;
+            -webkit-animation: c 2.50017540242s ease;
+        }
+        @-moz-keyframes c {
+          0%   { width: 0px;  }
+          82% { width: 82%;  }
+        }
+        @-webkit-keyframes c {
+          0%   { width: 0px;  }
+          82% { width: 82%;  }
+        }
+        
         .git {
             width: 94%;
-            -moz-animation: git 2.73160194645s ease;
-            -webkit-animation: git 2.73160194645s ease;
+            -moz-animation: git 4.13848934081s ease;
+            -webkit-animation: git 4.13848934081s ease;
         }
         @-moz-keyframes git {
           0%   { width: 0px;  }
@@ -15,8 +29,8 @@
         
         .python {
             width: 98%;
-            -moz-animation: python 3.75507056376s ease;
-            -webkit-animation: python 3.75507056376s ease;
+            -moz-animation: python 2.94664889663s ease;
+            -webkit-animation: python 2.94664889663s ease;
         }
         @-moz-keyframes python {
           0%   { width: 0px;  }
@@ -27,24 +41,10 @@
           98% { width: 98%;  }
         }
         
-        .unittest {
-            width: 95%;
-            -moz-animation: unittest 2.58751661917s ease;
-            -webkit-animation: unittest 2.58751661917s ease;
-        }
-        @-moz-keyframes unittest {
-          0%   { width: 0px;  }
-          95% { width: 95%;  }
-        }
-        @-webkit-keyframes unittest {
-          0%   { width: 0px;  }
-          95% { width: 95%;  }
-        }
-        
         .django {
             width: 87%;
-            -moz-animation: django 1.67078113835s ease;
-            -webkit-animation: django 1.67078113835s ease;
+            -moz-animation: django 1.75035549203s ease;
+            -webkit-animation: django 1.75035549203s ease;
         }
         @-moz-keyframes django {
           0%   { width: 0px;  }
@@ -57,8 +57,8 @@
         
         .ansible {
             width: 90%;
-            -moz-animation: ansible 1.69818632483s ease;
-            -webkit-animation: ansible 1.69818632483s ease;
+            -moz-animation: ansible 3.43545525006s ease;
+            -webkit-animation: ansible 3.43545525006s ease;
         }
         @-moz-keyframes ansible {
           0%   { width: 0px;  }
@@ -71,8 +71,8 @@
         
         .jenkins {
             width: 93%;
-            -moz-animation: jenkins 4.4031142582s ease;
-            -webkit-animation: jenkins 4.4031142582s ease;
+            -moz-animation: jenkins 3.5297404772s ease;
+            -webkit-animation: jenkins 3.5297404772s ease;
         }
         @-moz-keyframes jenkins {
           0%   { width: 0px;  }

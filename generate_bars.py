@@ -25,7 +25,7 @@ bars = {
     "django": 87,
     "ansible": 90,
     "jenkins": 93,
-    "unittest": 95,
+    "c": 82,
     "git": 94,
 }
 
