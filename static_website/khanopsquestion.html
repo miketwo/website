@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+    <title>Michael Ricks-Aherne</title>
+    <meta name="description" content="Personal Page">
+    <meta name="author" content="Michael Ricks-Aherne">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+   <link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/thumbs.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.png" >
+
+</head>
+
+<body>
+
+   <!-- Khan section (mirrors About section)
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+          <p><span>Describe one of the craziest ops-related situations (think war stories) you had to deal with?</span></p>
+
+         <div class="two columns">
+
+            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+
+         </div>
+
+         <div class="ten columns main-col">
+
+
+            <p>Ops is an overloaded term in aerospace. It can mean either software operations or (more commonly) satellite operations. This question is clearly directed at the former, but my most interesting experience has to do with the latter, and I think it will give a clearer insight into how I approach operations of both types. This is the story of the first city picture at Planet Labs.</p>
+
+            <p>The first two sats at Planet were called Dove 1 and Dove 2. For reasons having to do with the FCC, the naming was backward -- Dove 2 was the older version and Dove 1 the newer. They were launched within a couple days of each other, but there were huge advances in technology between them. (Dove 2 had been booked on a rocket a year prior, but the rocket provider had had massive delays.) They were also sent to very different orbits -- Dove 1 re-entered Earth's atmosphere in just 6 days, whereas Dove 2 remains and will continue to remain in orbit for nearly 20 years.</p>
+
+            <p>Dove 1's 6-day mission was very successful. It had the newest radio (nearly 100x faster than Dove 2), and it was able to capture and download 2 full-resolution pictures before re-entry. The pictures were good -- a forest and a mountain. They covered the company's needs in terms of agricultural examples, but we also wanted a city.</p>
+
+            <p>Choosing which picture to download was difficult. We had to decide among extremely tiny thumbnails and, for Dove 2, each full resolution picture could take weeks to download. These are some of the thumbnails we had.  Which one looks like a city to you?</p>
+            <p>
+            <div class="thumbnails">
+              <div class="imageHolder">
+                <img src="/images/webp/006.png" alt="" /> <div class="caption">006</div>
+              </div>
+              <div class="imageHolder">
+                <img src="/images/webp/009.png" alt="" /> <div class="caption">009</div>
+              </div>
+              <div class="imageHolder">
+                  <img src="/images/webp/010.png" alt="" /> <div class="caption">010</div>
+              </div>
+              <div class="imageHolder">
+                  <img src="/images/webp/011.png" alt="" /> <div class="caption">011</div>
+              </div>
+              <div class="imageHolder">
+                  <img src="/images/webp/012.png" alt="" /> <div class="caption">012</div>
+              </div>
+              <div class="imageHolder">
+                  <img src="/images/webp/015.png" alt="" /> <div class="caption">015</div>
+              </div>
+              <div class="imageHolder">
+                  <img src="/images/webp/016.png" alt="" /> <div class="caption">016</div>
+              </div>
+              <div class="imageHolder">
+                  <img src="/images/webp/029.png" alt="" /> <div class="caption">029</div>
+              </div>
+              <div class="imageHolder">
+                  <img src="/images/webp/030.png" alt="" /> <div class="caption">030</div>
+              </div>
+              <div class="imageHolder">
+                  <img src="/images/webp/054.png" alt="" /> <div class="caption">054</div>
+              </div>
+              <div class="imageHolder">
+                  <img src="/images/webp/057.png" alt="" /> <div class="caption">057</div>
+              </div>
+              <div class="imageHolder">
+                  <img src="/images/webp/080.png" alt="" /> <div class="caption">080</div>
+              </div>
+              <div class="imageHolder">
+                  <img src="/images/webp/081.png" alt="" /> <div class="caption">081</div>
+              </div>
+              <div class="imageHolder">
+                  <img src="/images/webp/093.png" alt="" /> <div class="caption">093</div>
+              </div>
+              <div class="imageHolder">
+                  <img src="/images/webp/109.png" alt="" /> <div class="caption">109</div>
+              </div>
+            </div> <!-- Thumbnails container -->
+            </p>
+            <p>I chose 011 because the overall color seems grey, as I would expect from a city. Also, the marks across the river don't seem natural; they look like bridges or other manmade structures.</p>
+            <p><div class="thumbnails">
+              <div class="imageHolder">
+                  <img src="/images/webp/011.png" alt="" /> <div class="caption">011</div>
+              </div>
+            </div></p>
+            <p>At this time, there was no Mission Control software. The ops team was myself and a few others, and all satellite operations were done by hand. This meant SSHing into a groundstation a few minutes before a pass, starting or restarting the scripts that would gather telemetry, and manually choosing which pictures to rsync down. This had to be done during the 12-13 minutes it was overhead.</p>
+
+            <p>Over the next 3 weeks, I spent every day downloading this photo. Passes come in groups of 3 roughly every 12 hours. We would have passes at 2:30, 4:00, and 5:30, both AM and PM, daily. Much to my wife's dismay, I found myself having to set alarms for every 90 minutes starting at 2 AM, and conducted the passes via VPN from my kitchen table.
+            </p>
+            When all was said and done, it turned out that 011 was not a city picture, but instead was sea ice off the coast of Norway or Sweden. I was not discouraged,  though. The business development team found the picture so beautiful and intricate that we were able to use it as effectively as a city picture. To this day, it remains my favorite.
+
+            <img src="/images/dove2.jpg" alt="Dove 2 imagery">
+
+            <p>We eventually downloaded a city picture of Japan that included a large stadium and a downtown area. </p>
+
+            <p>It was #016. Did you guess correctly?</p>
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="https://www.facebook.com/MichaelAherne"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://twitter.com/MikeTwo345"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://plus.google.com/+MichaelRicksAherne"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/miketwo"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="skype:miketwo345?call"><i class="fa fa-skype"></i></a></li>
+               <li><a href="mailto:miketwo@gmail.com"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2014 CeeVee</li>
+               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
+               <li>Source on <a title="GitHub" href="https://github.com/miketwo/website">GitHub</a></li>
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
+</html>
