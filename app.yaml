@@ -20,6 +20,9 @@ handlers:
   static_files: static_website/khanopsquestion.html
   upload: static_website/khanopsquestion.html
 
+- url: /learn/mocks
+  script: main.application
+
 #all static files return file if found,
 #otherwise the default 404 page so it can be handled by sites that link
 #directly to images.
