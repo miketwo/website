@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+    <title>Michael Ricks-Aherne</title>
+    <meta name="description" content="Personal Page">
+    <meta name="author" content="Michael Ricks-Aherne">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/default.css">
+   <link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/dynamic_resume.css">
+   <!-- <link rel="stylesheet" href="css/thumbs.css"> -->
+   <link rel="stylesheet" href="css/media-queries.css">
+
+   <!-- Script
+   ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.png" >
+
+</head>
+
+<body>
+  <div id="buttons">
+    <p class="btn-group">Click to highlight achievements</p>
+    <div class="btn-group" data-toggle="buttons">
+      <label class="btn btn-primary active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> Reset
+      </label>
+      <label class="btn btn-primary">
+        <input type="radio" name="options" id="option2" autocomplete="off"> Aerospace
+      </label>
+      <label class="btn btn-primary">
+        <input type="radio" name="options" id="option3" autocomplete="off"> Software
+      </label>
+      <label class="btn btn-primary">
+        <input type="radio" name="options" id="option3" autocomplete="off"> Leadership
+      </label>
+    </div>
+  </div>
+
+   <section id="dynamic_resume">
+      <!-- BEGIN: Underscore Template Definition. -->
+      <script type="text/template" class="template">
+
+      <div class="row titleblock">
+         <div class="three columns">
+            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+         </div>
+
+         <div class="six columns">
+
+              <h1><%- rc.biographical.name %></h1>
+              <h2><%- rc.biographical.title %></h2>
+
+          </div>
+          <div class="three columns">
+                  <%- rc.biographical.email %><br />
+                  <%- rc.biographical.website %><br />
+                  <%- rc.biographical.phone %><br />
+                  <%- rc.biographical.address %><br />
+                  <%- rc.biographical.citizenship %><br />
+                  <%- rc.biographical.clearance %><br />
+          </div>
+      </div>
+
+      <div class="row new-section">
+        <div class="twelve columns">
+          <h1>Experience</h1>
+        </div>
+      </div>
+
+      <% _.each( rc.experience, function(job){ %>
+        <div class="row">
+          <div class="three columns">
+            <h1><%- job.time %></h1>
+          </div>
+          <div class="six columns">
+            <h1><%- job.name %></h1>
+            <h2><%- job.title %></h2>
+          </div>
+          <div class="three columns">
+            <h1><%- job.location %></h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="three columns">
+            <!-- Nothing -->
+          </div>
+          <div class="nine columns">
+            <p><%- job.description %></p>
+          <ul>
+            <% _.each(job.bullets, function(bullet){ %>
+              <li class="<%= bullet.tags? bullet.tags.join(' '):'' %>"><%= bullet.description %> <span><%- bullet.skills %></span>
+              </li>
+            <% }); %>
+          </ul>
+          </div>
+        </div>
+      <% }); %>
+
+      <div class="row new-section">
+        <div class="twelve columns">
+          <h1>Publications</h1>
+        </div>
+      </div>
+      <% _.each(rc.publications, function( pub ){ %>
+      <div class="each">
+        <div class="row">
+          <div class="three columns">
+            <!-- Nothing -->
+          </div>
+          <div class="six columns">
+            <h1><a href="<%- pub.link %>"><%- pub.name %></a></h1>
+          </div>
+          <div class="three columns">
+            <!-- Nothing -->
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="three columns">
+            <!-- Nothing -->
+          </div>
+          <div class="nine columns">
+            <p><%- pub.authors %><%- pub.serial %><%- pub.description %></p>
+          </div>
+        </div>
+      </div>
+      <% }); %>
+
+      <div class="row new-section">
+        <div class="twelve columns">
+          <h1>Education</h1>
+        </div>
+      </div>
+      <% _.each(rc.education, function( ed ){ %>
+        <div class="row">
+          <div class="three columns">
+            <h1><%- ed.time %></h1>
+          </div>
+          <div class="six columns">
+            <h1><%- ed.school %></h1>
+            <h2><%- ed.degree %></h2>
+          </div>
+          <div class="three columns">
+            <h1><%- ed.location %></h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="three columns">
+            <!-- Nothing -->
+          </div>
+          <div class="nine columns">
+            <ul>
+              <% _.each(ed.bullets, function(bullet){ %>
+                <li class="<%= bullet.tags? bullet.tags.join(' '):'' %>"><%= bullet.description %></li>
+              <% }); %>
+            </ul>
+          </div>
+        </div>
+      <% }); %>
+
+      <div class="row new-section">
+        <div class="twelve columns">
+          <h1>Personal</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="three columns">
+          <!-- Nothing -->
+        </div>
+        <div class="six columns">
+          <p><%- rc.personal.join(', ') %></p>
+        </div>
+        <div class="three columns">
+          <!-- Nothing -->
+        </div>
+      </div>
+    </script>
+    <!-- END: Underscore Template Definition. -->
+
+   </section> <!-- Section End-->
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="https://www.facebook.com/MichaelAherne"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://twitter.com/MikeTwo345"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://plus.google.com/+MichaelRicksAherne"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/miketwo"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="skype:miketwo345?call"><i class="fa fa-skype"></i></a></li>
+               <li><a href="mailto:miketwo@gmail.com"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2014 CeeVee</li>
+               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
+               <li>Source on <a title="GitHub" href="https://github.com/miketwo/website">GitHub</a></li>
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+   <script src="js/underscore-min.js"></script>
+   <script src="js/jquery-ui.min.js"></script>
+   <script src="js/jquery.sticky.js"></script>
+   <script src="js/resume.js"></script>
+   <script>
+    // Todo: Move all includes inside resume.js using requirejs.
+    DynamicResume($("#dynamic_resume"));  // Renders everything
+   </script>
+</body>
+
+</html>

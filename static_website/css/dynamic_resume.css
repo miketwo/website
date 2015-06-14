@@ -1,0 +1,152 @@
+/* ------------------------------------------------------------------ */
+/* Dynamic Resume
+/* ------------------------------------------------------------------ */
+
+@font-face {
+    font-family: Constantine;
+    src: url('/fonts/Constantine.ttf');
+    }
+
+#dynamic_resume li {
+   list-style-type: disc;
+}
+
+#dynamic_resume ul {
+   margin-left: 18px;
+   margin-top: 0px;
+}
+
+#dynamic_resume p {
+   margin: 0 0 10px 0;
+}
+
+/* This div represents a single job, school or publication.
+It handles the spacing between those things*/
+#dynamic_resume .each {
+   margin: 0 0 20px 0;
+}
+
+body {
+    margin: 0 0 0 0;
+    line-height: 120%;
+}
+
+#buttons {
+    margin: 0 0 0 0;
+    margin-bottom: 70px;
+    padding: 0 0 0 0;
+    z-index: 900;
+    background-color: gray;
+}
+
+#buttons p {
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+}
+
+#buttons .btn-group {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#dynamic_resume {
+   background: #fff;
+   padding-top: 90px;
+   padding-bottom: 72px;
+   overflow: hidden;
+   color: black;
+}
+
+#dynamic_resume .titleblock {
+    margin-bottom: 30px;
+}
+
+#dynamic_resume .titleblock h1 {
+    font: 34px/40px 'opensans-bold', sans-serif;
+    font-family: Constantine;
+    margin-bottom: 0px;
+}
+
+#dynamic_resume .titleblock h2 {
+    font: 24px/24px 'opensans-regular', sans-serif;
+    margin-bottom: 30px;
+}
+
+
+#dynamic_resume .profile-pic {
+   position: relative;
+   width: 120px;
+   height: 120px;
+   border-radius: 100%;
+}
+
+#dynamic_resume a, #dynamic_resume a:visited  { color: #11ABB0; }
+#dynamic_resume a:hover, #dynamic_resume a:focus { color: #313131; }
+
+#dynamic_resume h1 {
+   font: 17px/17px 'opensans-bold', sans-serif;
+   font-family: Constantine;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   margin-bottom: 0px;
+}
+
+#dynamic_resume h1 span {
+   border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
+}
+#dynamic_resume h2 {
+   font: 17px/24px 'opensans-bold', sans-serif;
+   font-family: Constantine;
+   color: rgb(36,2,128);
+   margin-bottom: 6px;
+}
+
+#dynamic_resume h3 {
+   font: 25px/30px 'opensans-bold', sans-serif;
+}
+
+#dynamic_resume .header-col { padding-top: 9px; }
+#dynamic_resume .main-col { padding-right: 10%; }
+
+#education, #experience, #skills {
+   margin-bottom: 0px;
+   padding-bottom: 0px;
+}
+
+#dynamic_resume .info {
+   font: 16px/24px 'librebaskerville-italic', serif;
+   color: #6E7881;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
+#dynamic_resume .info span {
+   margin-right: 5px;
+   margin-left: 5px;
+}
+#dynamic_resume .date {
+   font: 15px/24px 'opensans-regular', sans-serif;
+   margin-top: 6px;
+}
+
+#dynamic_resume span {
+  font-weight: 900;
+}
+
+#dynamic_resume .new-section h1 {
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.subdued {
+    color: #D8D8D8;
+}
+
+.highlight {
+    background-color: #FFFFEC;
+    opacity: 50%;
+}
+

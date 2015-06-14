@@ -20,8 +20,14 @@ handlers:
   static_files: static_website/khanopsquestion.html
   upload: static_website/khanopsquestion.html
 
+# Link to Educational Videos
 - url: /learn/mocks
   script: main.application
+
+# New dynamic resume
+- url: /resume
+  static_files: static_website/resume.html
+  upload: static_website/resume.html
 
 #all static files return file if found,
 #otherwise the default 404 page so it can be handled by sites that link
