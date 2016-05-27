@@ -22,7 +22,7 @@ var DynamicResume = function ($el) {
             "email": "miketwo@gmail.com",
             "website": "miketwo.net",
             "phone": "+1 (240) 423-7355",
-            "address": "Oakland, CA",
+            "address": "St. Louis, MO",
             "citizenship": "Dual US/Irish Citizen",
             "clearance": "Inactive Secret Clearance"
         },
