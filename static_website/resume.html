@@ -65,7 +65,11 @@
          <div class="six columns">
 
               <h1><%- rc.biographical.name %></h1>
-              <h2><%- rc.biographical.title %></h2>
+              <h2>
+                <span class='Software'>Software. </span>
+                <span class='Aerospace'>Aerospace. </span>
+                <span class='Leadership'>Leadership. </span>
+              </h2>
 
           </div>
           <div class="three columns">
@@ -105,7 +109,7 @@
             <p><%- job.description %></p>
           <ul>
             <% _.each(job.bullets, function(bullet){ %>
-              <li class="<%= bullet.tags? bullet.tags.join(' '):'' %>"><%= bullet.description %> <span><%- bullet.skills %></span>
+              <li class="<%= bullet.tags? bullet.tags.join(' '):'' %>"><%= bullet.description %> <b><%- bullet.skills %></b>
               </li>
             <% }); %>
           </ul>

@@ -4,6 +4,7 @@
 /* jslint onevar: false */
 
 var DynamicResume = function ($el) {
+    // The toplevel $el that is passed in is a section element.
 
     // Speed up rendering.
     _.templateSettings.variable = "rc";
@@ -16,7 +17,6 @@ var DynamicResume = function ($el) {
     var resume = {
         "biographical": {
             "name": "Michael Ricks-Aherne",
-            "title": "Software. Aerospace. Leadership.",
             "email": "miketwo@gmail.com",
             "website": "miketwo.net",
             "phone": "+1 (240) 423-7355",
@@ -327,10 +327,12 @@ var DynamicResume = function ($el) {
         var text = $.trim($(ev.target).text());
 
         if (text === "Reset") {
-            $el.find('li').removeClass('subdued highlight', 1000);
+            $el.find('.subdued, .highlight').removeClass('subdued highlight', 1000);
             return;
         }
-        $el.find("li:not(" + "." + text + ")")
+        // Within the section, we switch classes on bullets 
+        // that match "Aerospace", "Software" or "Leadership"
+        $el.find("li:not(" + "." + text + "), span:not(" + "." + text + ")")
             .switchClass('highlight', 'subdued', 1000);
         $el.find("." + text)
             .switchClass('subdued', 'highlight', 1000);
