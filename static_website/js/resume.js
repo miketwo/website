@@ -3,8 +3,6 @@
 /* jshint onevar: false */
 /* jslint onevar: false */
 
-// ToDo: Rewrite this whole thing in angular, and put the data in a database
-
 var DynamicResume = function ($el) {
 
     // Speed up rendering.
@@ -18,7 +16,7 @@ var DynamicResume = function ($el) {
     var resume = {
         "biographical": {
             "name": "Michael Ricks-Aherne",
-            "title": "Aerospace / Full Stack Engineer",
+            "title": "Software. Aerospace. Leadership.",
             "email": "miketwo@gmail.com",
             "website": "miketwo.net",
             "phone": "+1 (240) 423-7355",
@@ -27,6 +25,46 @@ var DynamicResume = function ($el) {
             "clearance": "Inactive Secret Clearance"
         },
         "experience": [
+            {
+                "name": "Sauce Labs",
+                "title": "Senior Software Engineer",
+                "time": "2015-2016",
+                "location": "San Francisco, CA",
+                "description": "Sauce Labs provides a platform for automated testing of web and mobile applications. I am responsible for many aspects of the Continouos Integration (CI) pipeline. Selected accomplishments:",
+                "bullets": [
+                    {
+                        "description": "Revolutionized internal CI process within 2 months of starting and received a bonus for my efforts.",
+                        "skills": "[Jenkins]",
+                        "tags": ["Software", "Leadership"]
+                    },
+                    {
+                        "description": "Helped automate dev-environment creation.",
+                        "skills": "[Ansible, Packer with QEMU Builder]",
+                        "tags": ["Software"]
+                    },
+                    {
+                        "description": "Promoted within 6 months to work directly under the Founder/CTO on CI.",
+                        "tags": ["Software"]
+                    },
+                    {
+                        "description": "Developed cross-disciplinary solutions across multiple teams and repos.",
+                        "skills": "[Python, Angular, Coffeescript, Groovy]",
+                        "tags": ["Software"]
+                    },
+                    {
+                        "description": "Received praise for consistent work on documentation, meeting notes and paying tech debt.",
+                        "tags": [""]
+                    },
+                    {
+                        "description": "Contributed in non-technical ways to the Sauce culture:<br />- Participated in the Values Task Force, a team to shape and guide Sauce's values.<br />- Constructed a large (G-motor) Sauce-branded amateur rocket.",
+                        "tags": ["Aerospace", "Leadership"]
+                    },
+                    {
+                        "description": "Worked remotely from St. Louis.",
+                        "tags": [""]
+                    }
+                ]
+            },
             {
                 "name": "Planet Labs",
                 "title": "Senior Avionics and Software Engineer",
@@ -104,7 +142,7 @@ var DynamicResume = function ($el) {
                 "name" : "Information Sciences Institute",
                 "location": "Marina Del Rey, CA",
                 "time": "2007-2011",
-                "title": "Research Satellite Engineer, Space Engineering Research Center",
+                "title": "Research Satellite Engineer",
                 "description": "Designed guidance, navigation and control systems and managed students on several microsatellite research programs. Selected accomplishments:",
                 "bullets": [
                     {
@@ -156,7 +194,7 @@ var DynamicResume = function ($el) {
                 "name": "Stinger Ghaffarian Technologies (SGT)",
                 "location": "Upper Marlboro, MD",
                 "time": "2006-2009",
-                "title": "Systems Engineer, Mission Systems Engineering",
+                "title": "Systems Engineer",
                 "description": "Managed NASA Goddard Space Flight Center’s Requirements Database and designed satellite propulsion subsystems.  Selected accomplishments:",
                 "bullets": [
                     {
@@ -179,7 +217,7 @@ var DynamicResume = function ($el) {
                 "name": "FAA Office of Commercial Space Transportation",
                 "location": "Washington, DC",
                 "time": "2003-2006",
-                "title": "Aerospace Engineer, Licensing And Safety",
+                "title": "Aerospace Engineer",
                 "description": "Managed and oversaw amateur rocket launches and regulation development.  Supported safety analyses for license and permit applications, including both quantitative and qualitative risk assessments.  Performed on-site safety inspections and compliance monitoring.  Selected accomplishments:",
                 "bullets": [
                     {
