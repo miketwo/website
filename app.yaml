@@ -19,7 +19,7 @@ handlers:
 - url: /learn/mocks
   script: main.application
 
-# New dynamic resume
+# Dynamic resume
 - url: /resume
   static_files: static_website/resume.html
   upload: static_website/resume.html

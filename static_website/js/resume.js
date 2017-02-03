@@ -19,8 +19,8 @@ var DynamicResume = function ($el) {
             "name": "Michael Ricks-Aherne",
             "email": "miketwo@gmail.com",
             "website": "miketwo.net",
-            "phone": "+1 (240) 423-7355",
-            "address": "St. Louis, MO",
+            "phone": "+49 176-2868-9664",
+            "address": "Berlin, Germany",
             "citizenship": "Dual US/Irish Citizen",
             "clearance": "Inactive Secret Clearance"
         },
@@ -28,7 +28,7 @@ var DynamicResume = function ($el) {
             {
                 "name": "Sauce Labs",
                 "title": "Senior Software Engineer",
-                "time": "2015-2016",
+                "time": "2015-2017",
                 "location": "San Francisco, CA",
                 "description": "Sauce Labs provides a platform for automated testing of web and mobile applications. I am responsible for many aspects of the Continouos Integration (CI) pipeline. Selected accomplishments:",
                 "bullets": [
@@ -39,7 +39,7 @@ var DynamicResume = function ($el) {
                     },
                     {
                         "description": "Helped automate dev-environment creation.",
-                        "skills": "[Ansible, Packer with QEMU Builder]",
+                        "skills": "[Ansible, Packer, QEMU]",
                         "tags": ["Software"]
                     },
                     {
@@ -47,20 +47,24 @@ var DynamicResume = function ($el) {
                         "tags": ["Software"]
                     },
                     {
+                        "description": "Saved $94,000/yr in AWS costs through prudent management of customer assets.",
+                        "tags": ["Leadership"]
+                    },
+                    {
                         "description": "Developed cross-disciplinary solutions across multiple teams and repos.",
                         "skills": "[Python, Angular, Coffeescript, Groovy]",
                         "tags": ["Software"]
                     },
                     {
-                        "description": "Received praise for consistent work on documentation, meeting notes and paying tech debt.",
-                        "tags": [""]
+                        "description": "Mentored several junior engineers across mutliple teams.",
+                        "tags": ["Leadership"]
                     },
                     {
                         "description": "Contributed in non-technical ways to the Sauce culture:<br />- Participated in the Values Task Force, a team to shape and guide Sauce's values.<br />- Constructed a large (G-motor) Sauce-branded amateur rocket.",
                         "tags": ["Aerospace", "Leadership"]
                     },
                     {
-                        "description": "Worked remotely from St. Louis.",
+                        "description": "Worked remotely from both St. Louis and Germany.",
                         "tags": [""]
                     }
                 ]
@@ -116,7 +120,7 @@ var DynamicResume = function ($el) {
                         "tags": ["Software"]
                     },
                     {
-                        "description": "Added frontend unit testing to Production's CI process. ",
+                        "description": "Added frontend unit testing to Manufacturing Team's CI process. ",
                         "skills": "[Backbone/Jasmine]",
                         "tags": ["Software"]
                     },
@@ -125,15 +129,7 @@ var DynamicResume = function ($el) {
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Gave tours to distinguished guests.",
-                        "tags": [""]
-                    },
-                    {
-                        "description": "Promoted cross-team solutions, like factory reset and SatCIoud, to address global optimization problems. ",
-                        "tags": ["Leadership"]
-                    },
-                    {
-                        "description": "Actively shaped company culture, advocating for the artist-in-residence program.",
+                        "description": "Gave tours to distinguished guests and actively shaped company culture, advocating for the unique artist-in-residence program.",
                         "tags": ["Leadership"]
                     }
                 ]
@@ -143,7 +139,7 @@ var DynamicResume = function ($el) {
                 "location": "Marina Del Rey, CA",
                 "time": "2007-2011",
                 "title": "Research Satellite Engineer",
-                "description": "Designed guidance, navigation and control systems and managed students on several microsatellite research programs. Selected accomplishments:",
+                "description": "Designed guidance, navigation and control systems and managed students on several microsatellite research programs. This position began as an unpaid graduate student and turned into a full time job upon graduation. Selected accomplishments:",
                 "bullets": [
                     {
                         "description": "Programmed, solely, the entire flight software system for USC’s first Cubesat, launched December 8, 2010 aboard SpaceX’s Falcon 9 rocket. (see Publications #1)",
@@ -180,7 +176,7 @@ var DynamicResume = function ($el) {
                         "tags": ["Software"]
                     },
                     {
-                        "description": "Managed both graduates and undergraduates as acting Systems Engineer.",
+                        "description": "Managed both graduates and undergraduates.",
                         "tags": ["Leadership"]
                     },
                     {
@@ -195,7 +191,7 @@ var DynamicResume = function ($el) {
                 "location": "Upper Marlboro, MD",
                 "time": "2006-2009",
                 "title": "Systems Engineer",
-                "description": "Managed NASA Goddard Space Flight Center’s Requirements Database and designed satellite propulsion subsystems.  Selected accomplishments:",
+                "description": "Managed NASA Goddard Space Flight Center’s Requirements Database and designed satellite propulsion subsystems. This position began as a full time job and faded to part-time upon entry to graduate school. Selected accomplishments:",
                 "bullets": [
                     {
                         "description": "Created automated tools to help with propulsion subsystem design, including tank sizing, plume impingement considerations, delta-v budgeting and cost/weight estimations. ",
@@ -276,6 +272,24 @@ var DynamicResume = function ($el) {
         ],
         "education": [
             {
+                "school": "Continuing Education",
+                "location": "Online",
+                "degree": "Coursera/Udacity",
+                "bullets": [
+                    {
+                        "description": "Machine Learning - Andrew Ng - Stanford University",
+                        "tags": ["Software"]
+                    },
+                    {
+                        "description": "Conflict Management - Najla DeBow - UC Irvine",
+                        "tags": ["Leadership"]
+                    },
+                    {
+                        "description": "Software Testing - John Regehr - Udacity",
+                        "tags": ["Software"]
+                    }]
+            },
+            {
                 "school": "USC",
                 "location": "Los Angeles, CA",
                 "degree": "M.S. Astronautical Engineering",
@@ -312,6 +326,8 @@ var DynamicResume = function ($el) {
                     }]
             }
         ],
+        "languages": ["English (C2-native)", 
+                      "German (A2-beginner)"],
         "personal": ["Certified Rollerblading Instructor",
                      "SCUBA diver",
                      "Snowboarder",
