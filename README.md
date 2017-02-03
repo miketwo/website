@@ -15,5 +15,10 @@ To deploy, run the `deploy.sh` script.
 
  - Consider adding a blog?
  - Links to the instructional youtube videos?
-
+ - Resume in Top Navbar
+ - 404 Page should be in the same style as the rest of the site
+ - Dynamic Resume 
+ 	- needs a way to return Home
+    - needs to also link to static resume
+ - Unit tests
 
