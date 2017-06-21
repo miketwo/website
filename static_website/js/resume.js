@@ -26,55 +26,38 @@ var DynamicResume = function ($el) {
         },
         "experience": [
             {
-                "name": "Sauce Labs",
-                "title": "Senior Software Engineer",
+                "name": "Various",
+                "title": "Contract Engineer",
                 "time": "2015-2017",
-                "location": "San Francisco, CA",
-                "description": "Sauce Labs provides a platform for automated testing of web and mobile applications. I am responsible for many aspects of the Continouos Integration (CI) pipeline. Selected accomplishments:",
+                "location": "Berlin, Germany",
+                "description": "Worked a variety of contract software engineering jobs while enjoying a break from the startup life.",
                 "bullets": [
                     {
-                        "description": "Revolutionized internal CI process within 2 months of starting and received a bonus for my efforts.",
-                        "skills": "[Jenkins]",
-                        "tags": ["Software", "Leadership"]
-                    },
-                    {
-                        "description": "Helped automate dev-environment creation.",
-                        "skills": "[Ansible, Packer, QEMU]",
-                        "tags": ["Software"]
-                    },
-                    {
-                        "description": "Promoted within 6 months to work directly under the Founder/CTO on CI.",
-                        "tags": ["Software"]
-                    },
-                    {
-                        "description": "Saved $94,000/yr in AWS costs through prudent management of customer assets.",
+                        "description": "Learned German up to level B1.",
+                        "skills": "",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Developed cross-disciplinary solutions across multiple teams and repos.",
-                        "skills": "[Python, Angular, Coffeescript, Groovy]",
+                        "description": "Attended several classes in machine learning.",
+                        "skills": "[Tensorflow, Octave]",
                         "tags": ["Software"]
                     },
                     {
-                        "description": "Mentored several junior engineers across mutliple teams.",
+                        "description": "Saved $120,000 off a client's annual AWS bill.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Contributed in non-technical ways to the Sauce culture:<br />- Participated in the Values Task Force, a team to shape and guide Sauce's values.<br />- Constructed a large (G-motor) Sauce-branded amateur rocket.",
-                        "tags": ["Aerospace", "Leadership"]
-                    },
-                    {
-                        "description": "Worked remotely from both St. Louis and Germany.",
-                        "tags": [""]
+                        "description": "Perfected my remote-working home office.",
+                        "tags": []
                     }
                 ]
             },
             {
                 "name": "Planet Labs",
-                "title": "Senior Avionics and Software Engineer",
+                "title": "Director, Mission Control",
                 "time": "2012-2015",
                 "location": "San Francisco, CA",
-                "description": "As one of the first dozen employees at Planet, I wore many hats, moving from the Spacecraft team to Mission Operations and finally to Manufacturing and Production. I've most likely transitioned (started-and-handed-off) more code than anyone else in the company. All told, I had an active role in designing, building, testing or flying 113 satellites. Selected highlights:",
+                "description": "As one of the first ten employees at Planet, I wore many hats, moving from the Spacecraft team to Manufacturing to Mission Operations. I probably transitioned (started-and-handed-off) more code than anyone else in the company. All told, I had an active role in designing, building, testing or flying Planet's first 113 satellites. Selected accomplishments:",
                 "bullets": [
                     {
                         "description": "Designed and developed 2/3 of the microcontroller code for our first spacecraft and significant portions for our second. This code handled power, inter-processor communication, scheduling, sensor acquisition, telemetry and commands. ",
@@ -326,8 +309,8 @@ var DynamicResume = function ($el) {
                     }]
             }
         ],
-        "languages": ["English (C2-native)", 
-                      "German (A2-beginner)"],
+        "languages": ["English (C2-native)",
+                      "German (B1-intermediate)"],
         "personal": ["Certified Rollerblading Instructor",
                      "SCUBA diver",
                      "Snowboarder",
@@ -346,7 +329,7 @@ var DynamicResume = function ($el) {
             $el.find('.subdued, .highlight').removeClass('subdued highlight', 1000);
             return;
         }
-        // Within the section, we switch classes on bullets 
+        // Within the section, we switch classes on bullets
         // that match "Aerospace", "Software" or "Leadership"
         $el.find("li:not(" + "." + text + "), span:not(" + "." + text + ")")
             .switchClass('highlight', 'subdued', 1000);
