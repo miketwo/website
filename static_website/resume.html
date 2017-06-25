@@ -35,12 +35,18 @@
 </head>
 
 <body>
-  <div id="buttons">
-    <p class="btn-group">Click to highlight achievements</p>
+  <div id="buttons" class="btn-block">
     <div class="btn-group" data-toggle="buttons">
-      <label class="btn btn-primary active">
-        <input type="radio" name="options" id="option1" autocomplete="off" checked> Reset
+      <label class="btn btn-info">
+        <input type="radio" name="nav" id="option1" autocomplete="off" checked> Home
       </label>
+      <label class="btn btn-info">
+        <input type="radio" name="nav" id="option1" autocomplete="off" checked> Download
+      </label>
+    </div>
+
+    <!-- <p class="btn-group">Click to highlight</p> -->
+    <div class="btn-group" data-toggle="buttons">
       <label class="btn btn-primary">
         <input type="radio" name="options" id="option4" autocomplete="off"> Leadership
       </label>
@@ -49,6 +55,9 @@
       </label>
       <label class="btn btn-primary">
         <input type="radio" name="options" id="option2" autocomplete="off"> Software
+      </label>
+      <label class="btn btn-primary active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> Reset highlights
       </label>
     </div>
   </div>

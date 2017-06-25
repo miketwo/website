@@ -55,12 +55,12 @@ body {
 /* dynamic css
 ------------------------------------------------------------------------ */
 @media only screen and (max-width: 767px) {
-  /* This helps keep the buttons on a single line by reducing the font 
-     for smaller screens.
+  /* This helps keep the buttons looking nice on mobile.
   */
   #buttons .btn {
     font-size: 12px;
-    font-size: 3.5vw;
+    font-size: 3.3vw;
+    padding: 3px 6px;
   }
 }
 

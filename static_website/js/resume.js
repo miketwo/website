@@ -325,7 +325,20 @@ var DynamicResume = function ($el) {
     $('.btn').on('click', function (ev) {
         var text = $.trim($(ev.target).text());
 
-        if (text === "Reset") {
+        if (text === "Home") {
+            window.location.href = "/";
+            return;
+        }
+
+        if (text === "Download") {
+            window.open(
+                '/downloads/resume.pdf',
+                '_blank'
+            );
+            return;
+        }
+
+        if (text === "Reset highlights") {
             $el.find('.subdued, .highlight').removeClass('subdued highlight', 1000);
             return;
         }
