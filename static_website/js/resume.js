@@ -26,7 +26,7 @@ var DynamicResume = function ($el) {
         },
         "experience": [
             {
-                "name": "Various",
+                "name": "Self-Employed",
                 "title": "Contract Engineer",
                 "time": "2015-2017",
                 "location": "Berlin, Germany",
