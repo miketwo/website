@@ -15,8 +15,12 @@ handlers:
   static_files: static_website/index.html
   upload: static_website/index.html
 
-# Link to Educational Videos
+# Redirect to Educational Videos
 - url: /learn/mocks
+  script: main.application
+
+# Redirect to Blog
+- url: /blog
   script: main.application
 
 # Dynamic resume
