@@ -19,37 +19,108 @@ var DynamicResume = function ($el) {
             "name": "Michael Ricks-Aherne",
             "email": "miketwo@gmail.com",
             "website": "miketwo.net",
-            "phone": "+49 176-2868-9664",
-            "address": "Berlin, Germany",
+            "phone": "+1 (240) 423-7355",
+            "address": "St. Louis, MO, USA",
             "citizenship": "Dual US/Irish Citizen",
             "clearance": "Inactive Secret Clearance"
         },
         "experience": [
             {
-                "name": "Self-Employed",
-                "title": "Contract Engineer",
-                "time": "2015-2017",
-                "location": "Berlin, Germany",
-                "description": "Worked a variety of contract software engineering jobs while enjoying a break from the startup life.",
+                "name": "Kubos Corp.",
+                "title": "Director, Mission Control",
+                "time": "2021",
+                "location": "Remote",
+                "description": "Kubos makes a cloud-based satellite Mission Control Platform. As the 4th employee in the company, my responsibilities spanned software engineering, management and support. Selected accomplishments:",
                 "bullets": [
                     {
-                        "description": "Learned German up to level B1.",
-                        "skills": "",
+                        "description": "Defined program vision and developed large portions of our 2021 feature set",
+                        "skills": "[Ruby on Rails, React]",
+                        "tags": ["Software", "Aerospace"]
+                    },
+                    {
+                        "description": "Improved API scope and performance",
+                        "skills": "[GraphQL, Websockets, Python]",
+                        "tags": ["Software", "Aerospace"]
+                    },
+                    {
+                        "description": "Owned execution schedules and customer engagement, coordinating several Independent Contractors.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Attended several classes in machine learning.",
+                        "description": "Provided support to existing on-orbit customers, including 24/7 LEOPS support.",
+                        "tags": ["Leadership", "Aerospace"]
+                    },
+                    {
+                        "description": "Generated documentation, how-to videos, blogs, and podcasts for both internal and external stakeholders.",
+                        "tags": ["Leadership", "Aerospace"]
+                    }
+                ]
+            },
+            {
+                "name": "1904 Labs",
+                "title": "Director, Modern Software Engineering",
+                "time": "2017-2021",
+                "location": "St. Louis, MO",
+                "description": "1904labs helps leaders digitally transform their business by implementing modern software and data solutions. The Modern Software Engineering Practice contains all Full Stack, DevOps, and Mobile Engineers in the company. Selected accomplishments:",
+                "bullets": [
+                    {
+                        "description": "Managed a personnel budget in excess of $5M and discretionary budget in excess of $40k",
+                        "tags": ["Leadership"]
+                    },
+                    {
+                        "description": "Lead the creation of the Study Group Program, generating value through knowledge reuse and mentorship",
+                        "tags": ["Leadership"]
+                    },
+                    {
+                        "description": "Standardized Contribution Reviews using a self-directed process to preserve autonomy and encourage growth.",
+                        "tags": ["Leadership"]
+                    },
+                    {
+                        "description": "Owned weekly Leadership Touchpoint meetings and coordinated strategic initiatives.",
+                        "tags": ["Leadership"]
+                    },
+                    {
+                        "description": "Conducted screenings, interviews, and made hiring decisions for the Practice.",
+                        "tags": ["Leadership"]
+                    },
+                ]
+            },
+            {
+                "name": "Sauce Labs",
+                "title": "Senior Software Engineer",
+                "time": "2015-2017",
+                "location": "Berlin, Germany",
+                "description": "Sauce provides a cloud-based platform for the automated testing of web and mobile applications. The scope of my responsibilities covered all aspects of the Continouos Integration pipeline. Selected accomplishments:",
+                "bullets": [
+                    {
+                        "description": "Pioneered several large evolutions in the development process, saving countless hours of developer time. Examples include automated branch testing, custom integrations with Slack, a \"follow the sun\" PagerDuty setup and Gated Commits.",
+                        "skills": "[Jenkins, Python, Coffeescript, Groovy]",
+                        "tags": ["Leadership"]
+                    },
+                    {
+                        "description": "Shaved $120,000 from the annual AWS bill by re-architecting our data storage layer.",
+                        "skills": "[AWS S3, CloudWatch]",
+                        "tags": ["Leadership", "Software"]
+                    },
+                    {
+                        "description": "Managed a small team and served as AGILE Scrum Master.",
+                        "tags": ["Leadership"]
+                    },
+                    {
+                        "description": "Designed and built several web components.",
+                        "skills": "[Angular, Javascript]",
+                        "tags": ["Software"]
+                    },
+                    {
+                        "description": "Aced continuing education classes in machine learning.",
                         "skills": "[Tensorflow, Octave]",
                         "tags": ["Software"]
                     },
                     {
-                        "description": "Saved $120,000 off a client's annual AWS bill.",
+                        "description": "Mentored junior engineers and received accolades for my documentation.",
                         "tags": ["Leadership"]
-                    },
-                    {
-                        "description": "Perfected my remote-working home office.",
-                        "tags": []
-                    }
+                    }, 
+
                 ]
             },
             {
@@ -57,7 +128,7 @@ var DynamicResume = function ($el) {
                 "title": "Director, Mission Control",
                 "time": "2012-2015",
                 "location": "San Francisco, CA",
-                "description": "As one of the first ten employees at Planet, I wore many hats, moving from the Spacecraft team to Manufacturing to Mission Operations. I probably transitioned (started-and-handed-off) more code than anyone else in the company. All told, I had an active role in designing, building, testing or flying Planet's first 113 satellites. Selected accomplishments:",
+                "description": "Planet Labs is multi-billion dollar Earth imaging company. As the 7th employee, I wore many hats, moving from the Spacecraft team to Manufacturing to Mission Operations. All told, I had an active role in designing, building, testing or flying the first 113 satellites. Selected accomplishments:",
                 "bullets": [
                     {
                         "description": "Designed and developed 2/3 of the microcontroller code for our first spacecraft and significant portions for our second. This code handled power, inter-processor communication, scheduling, sensor acquisition, telemetry and commands. ",
@@ -120,9 +191,9 @@ var DynamicResume = function ($el) {
             {
                 "name" : "Information Sciences Institute",
                 "location": "Marina Del Rey, CA",
-                "time": "2007-2011",
+                "time": "2009-2012",
                 "title": "Research Satellite Engineer",
-                "description": "Designed guidance, navigation and control systems and managed students on several microsatellite research programs. This position began as an unpaid graduate student and turned into a full time job upon graduation. Selected accomplishments:",
+                "description": "Designed guidance, navigation and control systems and managed students on several microsatellite research programs. Selected accomplishments:",
                 "bullets": [
                     {
                         "description": "Programmed, solely, the entire flight software system for USC’s first Cubesat, launched December 8, 2010 aboard SpaceX’s Falcon 9 rocket. (see Publications #1)",
@@ -174,7 +245,7 @@ var DynamicResume = function ($el) {
                 "location": "Upper Marlboro, MD",
                 "time": "2006-2009",
                 "title": "Systems Engineer",
-                "description": "Managed NASA Goddard Space Flight Center’s Requirements Database and designed satellite propulsion subsystems. This position began as a full time job and faded to part-time upon entry to graduate school. Selected accomplishments:",
+                "description": "Managed NASA Goddard Space Flight Center’s Requirements Database and designed satellite propulsion subsystems. Selected accomplishments:",
                 "bullets": [
                     {
                         "description": "Created automated tools to help with propulsion subsystem design, including tank sizing, plume impingement considerations, delta-v budgeting and cost/weight estimations. ",
@@ -197,7 +268,7 @@ var DynamicResume = function ($el) {
                 "location": "Washington, DC",
                 "time": "2003-2006",
                 "title": "Aerospace Engineer",
-                "description": "Managed and oversaw amateur rocket launches and regulation development.  Supported safety analyses for license and permit applications, including both quantitative and qualitative risk assessments.  Performed on-site safety inspections and compliance monitoring.  Selected accomplishments:",
+                "description": "Oversaw amateur rocket launches and regulation development. Conducted safety analyses for license and permit applications. Performed on-site safety inspections and compliance monitoring. Selected accomplishments:",
                 "bullets": [
                     {
                         "description": "Maintained flawless safety record of the amateur rocket community.",
@@ -216,7 +287,8 @@ var DynamicResume = function ($el) {
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Experienced with all Range Safety analyses, including <br />- 6-degree-of-freedom trajectory simulation, dispersion and malfunction turn analyses<br />- Blast overpressure calculations, damage modeling, debris generation and fragmentation distance<br />- Probability-of-impact and cumulative risk assessment<br />- FMECA, Fault Tree Analyses, Hazard Analyses<br />- [Technologies used: POST, OrSAT, STK, Splash, TaOS, Maple, Visual Basic]",
+                        "description": "Experienced with all Range Safety analyses, including <br />- 6-degree-of-freedom trajectory simulation, dispersion and malfunction turn analyses<br />- Blast overpressure calculations, damage modeling, debris generation and fragmentation distance<br />- Probability-of-impact and cumulative risk assessment<br />- FMECA, Fault Tree Analyses, Hazard Analyses<br />- ",
+                        "skills": "[Technologies used: POST, OrSAT, STK, Splash, TaOS, Maple, Visual Basic]",
                         "tags": ["Aerospace", "Software"]
                     }
                 ]
@@ -229,21 +301,21 @@ var DynamicResume = function ($el) {
                 "authors": "J. Tim Barrett, Michael Aherne, Will Bezouska, Jeff Sachs and Lucy Hoag",
                 "serial": "AIAA-2011-713.",
                 "description": "Presented at the 2011 AIAA Space Conference, Pasadena, CA.",
-                "link": "http://arc.aiaa.org/doi/abs/10.2514/6.2011-7132"
+                "link": "downloads/caerus.pdf"
             },
             {
                 "name": "Colony I Meets Three-Axis Pointing.",
                 "authors": "M. Aherne, T. Barrett, L. Hoag, E. Teegarden, R. Ramadas",
                 "serial": "SSC11-XII-7.",
                 "description": "2011 Utah Small Satellite Conference.",
-                "link": "http://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=1181&context=smallsat"
+                "link": "downloads/3axis_pointing.pdf"
             },
             {
                 "name": "Demonstration of Technologies for Autonomous Micro-Satellite Assembly.",
                 "authors": "M. Aherne, T. Barrett, W. Bezouska and S. Schultz",
                 "serial": "AIAA-2009-6504.",
                 "description": "Presented at the 2009 AIAA Space Conference. Pasadena, CA.",
-                "link": "http://enu.kz/repository/2009/AIAA-2009-6504.pdf"
+                "link": "downloads/usat_assembly.pdf"
             },
             {
                 "name": "Requirements for Amateur Rocket Activities.",
@@ -260,6 +332,10 @@ var DynamicResume = function ($el) {
                 "degree": "Coursera/Udacity",
                 "bullets": [
                     {
+                        "description": "iOS & Swift - Dr. Angela Yu - Udemy",
+                        "tags": ["Software"]
+                    },
+                    {
                         "description": "Machine Learning - Andrew Ng - Stanford University",
                         "tags": ["Software"]
                     },
@@ -270,7 +346,8 @@ var DynamicResume = function ($el) {
                     {
                         "description": "Software Testing - John Regehr - Udacity",
                         "tags": ["Software"]
-                    }]
+                    }
+                ]
             },
             {
                 "school": "USC",
