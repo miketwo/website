@@ -26,6 +26,35 @@ var DynamicResume = function ($el) {
         },
         "experience": [
             {
+                "name": "1904Labs",
+                "title": "Director, Practices & Solutions",
+                "time": "2022-2023",
+                "location": "Saint Louis, MO",
+                "description": "I enjoyed working here so much I came back for a second tour of duty. My responsibilities encompassed the technical arm of the company Selected accomplishments:",
+                "bullets": [
+                    {
+                        "description": "Established a career growth framework",
+                        "tags": ["Leadership"]
+                    },
+                    {
+                        "description": "",
+                        "tags": ["Leadership"]
+                    },
+                    {
+                        "description": "Standardized Contribution Reviews using a self-directed process to preserve autonomy and encourage growth.",
+                        "tags": ["Leadership"]
+                    },
+                    {
+                        "description": "Owned weekly Leadership Touchpoint meetings and coordinated strategic initiatives.",
+                        "tags": ["Leadership"]
+                    },
+                    {
+                        "description": "Conducted screenings, interviews, and made hiring decisions for the Practice.",
+                        "tags": ["Leadership"]
+                    },
+                ]
+            },
+            {
                 "name": "Kubos Corp.",
                 "title": "Director, Mission Control",
                 "time": "2021",
@@ -119,7 +148,7 @@ var DynamicResume = function ($el) {
                     {
                         "description": "Mentored junior engineers and received accolades for my documentation.",
                         "tags": ["Leadership"]
-                    }, 
+                    },
 
                 ]
             },
