@@ -27,33 +27,67 @@ var DynamicResume = function ($el) {
         "experience": [
             {
                 "name": "1904Labs",
-                "title": "Director, Practices & Solutions",
+                "title": "Senior Director, Practices & Solutions",
                 "time": "2022-2023",
                 "location": "Saint Louis, MO",
-                "description": "I enjoyed working here so much I came back for a second tour of duty. My responsibilities encompassed the technical arm of the company Selected accomplishments:",
+                "description": "1904labs helps leaders digitally transform their business by implementing modern software and data solutions. Responsibilities included oversight of all engineers and solutions. This position reported to the Owner. Selected accomplishments:",
                 "bullets": [
                     {
-                        "description": "Established a career growth framework",
+                        "description": "Lead a ~70-person engineering team to deliver amazing service to multiple enterprise customers.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "",
+                        "description": "Owned the strategic roadmap, advised on GTM strategy, and coordinated sales and marketing efforts for our flagship solution: AI-Enabled Customer Service.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Standardized Contribution Reviews using a self-directed process to preserve autonomy and encourage growth.",
+                        "description": "Proposed changes to Business Development and Sales to support expanded career tracks for engineers.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Owned weekly Leadership Touchpoint meetings and coordinated strategic initiatives.",
+                        "description": "Mentored directors on leadership and gave career guidance to engineers.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Conducted screenings, interviews, and made hiring decisions for the Practice.",
+                        "description": "Received high praise for alignment and delegation efforts.",
+                        "tags": ["Leadership"]
+                    }
+                ]
+            },
+            {
+                "name": "Ricks-Aherne, Inc.",
+                "title": "Father",
+                "time": "2022",
+                "location": "St. Louis, MO",
+                "description": "Took a break to support my new family. Selected Accomplishments:",
+                "bullets": [
+                    {
+                        "description": "Managed the successful changing of an estimated 3,000 diapers.",
+                        "tags": ["Leadership"]
+                    },
+                    {
+                        "description": "Memorized several works of classic literature through an extensive spaced-repetition training program, including Goodnight Gorilla, Little Blue Truck, and The Gruffalo.",
+                        "tags": ["Leadership"]
+                    },
+                    {
+                        "description": "Lead multiple bottle prep and feeding operations in high-stress, time-critical situations.",
+                        "tags": ["Leadership"]
+                    },
+                    {
+                        "description": "Oversaw a comprehensive, on-the-spot healthcare program specializing in kisses and ice packs.",
+                        "tags": ["Leadership"]
+                    },
+                    {
+                        "description": 'Pioneered "seamless" transitions between day and night shifts.',
+                        "tags": ["Leadership"]
+                    },
+                    {
+                        "description": "Sustained high morale with captivating airplane noises.",
                         "tags": ["Leadership"]
                     },
                 ]
             },
+
             {
                 "name": "Kubos Corp.",
                 "title": "Director, Mission Control",
@@ -157,7 +191,7 @@ var DynamicResume = function ($el) {
                 "title": "Director, Mission Control",
                 "time": "2012-2015",
                 "location": "San Francisco, CA",
-                "description": "Planet Labs is multi-billion dollar Earth imaging company. As the 7th employee, I wore many hats, moving from the Spacecraft team to Manufacturing to Mission Operations. All told, I had an active role in designing, building, testing or flying the first 113 satellites. Selected accomplishments:",
+                "description": "Planet Labs is multi-billion dollar Earth imaging company. As the 7th employee, I wore many hats, moving from the Spacecraft team to Manufacturing to Mission Operations. All told, I had an active role in designing, building, testing and flying the first 113 satellites. Selected accomplishments:",
                 "bullets": [
                     {
                         "description": "Designed and developed 2/3 of the microcontroller code for our first spacecraft and significant portions for our second. This code handled power, inter-processor communication, scheduling, sensor acquisition, telemetry and commands. ",
@@ -415,8 +449,8 @@ var DynamicResume = function ($el) {
                     }]
             }
         ],
-        "languages": ["English (C2-native)",
-                      "German (B1-intermediate)"],
+        "languages": ["English (C2-Native)",
+                      "German (A2-Waystage)"],
         "personal": ["Certified Rollerblading Instructor",
                      "SCUBA diver",
                      "Snowboarder",
