@@ -38,7 +38,7 @@ var DynamicResume = function ($el) {
                     },
                     {
                         "description": "Owned the strategic roadmap, advised on GTM strategy, and coordinated sales and marketing efforts for our flagship solution: AI-Enabled Customer Service.",
-                        "tags": ["Leadership"]
+                        "tags": ["Leadership", "Software"]
                     },
                     {
                         "description": "Proposed changes to Business Development and Sales to support expanded career tracks for engineers.",
@@ -62,15 +62,15 @@ var DynamicResume = function ($el) {
                 "description": "Took a break to support my new family. Selected Accomplishments:",
                 "bullets": [
                     {
-                        "description": "Managed the successful changing of an estimated 3,000 diapers.",
+                        "description": "Managed an estimated 3,000 successful diaper changes.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Memorized several works of classic literature through an extensive spaced-repetition training program, including Goodnight Gorilla, Little Blue Truck, and The Gruffalo.",
+                        "description": "Memorized classic literature through an extensive spaced-repetition training program, including Goodnight Gorilla, Little Blue Truck, and The Gruffalo.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Lead multiple bottle prep and feeding operations in high-stress, time-critical situations.",
+                        "description": "Lead bottle prep and feeding operations in high-stress, time-critical situations.",
                         "tags": ["Leadership"]
                     },
                     {
@@ -390,9 +390,9 @@ var DynamicResume = function ($el) {
         ],
         "education": [
             {
-                "school": "Continuing Education",
+                "school": "Coursera | Udacity | Udemy",
                 "location": "Online",
-                "degree": "Coursera/Udacity",
+                "degree": "Continuing Education",
                 "bullets": [
                     {
                         "description": "iOS & Swift - Dr. Angela Yu - Udemy",
@@ -413,8 +413,9 @@ var DynamicResume = function ($el) {
                 ]
             },
             {
-                "school": "USC",
+                "school": "University of Southern California (USC)",
                 "location": "Los Angeles, CA",
+                "time": "2009-2012",
                 "degree": "M.S. Astronautical Engineering",
                 "bullets": [
                     {
@@ -427,8 +428,9 @@ var DynamicResume = function ($el) {
                     }]
             },
             {
-                "school": "ERAU",
+                "school": "Embry-Riddle Aeronautical University (ERAU)",
                 "location": "Daytona Beach, FL",
+                "time": "1999-2003",
                 "degree": "B.S. Engineering Physics, Minor Mathematics",
                 "bullets": [
                     {

@@ -68,6 +68,15 @@ body {
     font-size: 3.3vw;
     padding: 3px 6px;
   }
+
+  /* For smaller devices, use all the real-estate */
+  #dynamic_resume .row {
+      max-width: none;
+   }
+
+   #dynamic_resume .columns {
+      padding: 0px;
+   }
 }
 
 #dynamic_resume {
@@ -76,6 +85,10 @@ body {
    padding-bottom: 72px;
    overflow: hidden;
    color: black;
+}
+
+#dynamic_resume .row {
+   max-width: 80%;
 }
 
 #dynamic_resume .titleblock {
@@ -96,8 +109,8 @@ body {
 
 #dynamic_resume .profile-pic {
    position: relative;
-   width: 120px;
-   height: 120px;
+   width: 150px;
+   height: 150px;
    border-radius: 100%;
 }
 
@@ -110,10 +123,12 @@ body {
 
 #dynamic_resume h1 {
    font: 17px/17px 'opensans-bold', sans-serif;
+
    font-family: Constantine;
    text-transform: uppercase;
    letter-spacing: 1px;
    margin-bottom: 0px;
+   font-weight: 900;
    /* text-align: right; */
 }
 
@@ -156,12 +171,14 @@ body {
 }
 
 #dynamic_resume span {
-  font-weight: 900;
+   font-weight: 900;
 }
 
 #dynamic_resume .new-section h1 {
-    font-weight: 900;
-    margin-bottom: 10px;
+   font-weight: 1200;
+   font-size: 2em;
+   margin-bottom: 10px;
+   line-height: 2em;
 }
 
 .subdued {
@@ -171,4 +188,3 @@ body {
 .highlight {
     background-color: #FFFFEC;
 }
-
