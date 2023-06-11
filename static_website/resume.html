@@ -126,6 +126,41 @@
         </div>
       <% }); %>
 
+
+
+      <div class="row new-section">
+        <div class="twelve columns">
+          <h1>Education</h1>
+        </div>
+      </div>
+      <% _.each(rc.education, function( ed ){ %>
+        <div class="row">
+          <div class="three columns">
+            <h1><%- ed.time %></h1>
+          </div>
+          <div class="six columns">
+            <h1><%- ed.school %></h1>
+            <h2><%- ed.degree %></h2>
+          </div>
+          <div class="three columns right">
+            <h1><%- ed.location %></h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="three columns">
+            <!-- Nothing -->
+          </div>
+          <div class="nine columns">
+            <ul>
+              <% _.each(ed.bullets, function(bullet){ %>
+                <li class="<%= bullet.tags? bullet.tags.join(' '):'' %>"><%= bullet.description %></li>
+              <% }); %>
+            </ul>
+          </div>
+        </div>
+      <% }); %>
+
       <div class="row new-section">
         <div class="twelve columns">
           <h1>Publications</h1>
@@ -154,39 +189,6 @@
           </div>
         </div>
       </div>
-      <% }); %>
-
-      <div class="row new-section">
-        <div class="twelve columns">
-          <h1>Education</h1>
-        </div>
-      </div>
-      <% _.each(rc.education, function( ed ){ %>
-        <div class="row">
-          <div class="three columns">
-            <h1><%- ed.time %></h1>
-          </div>
-          <div class="six columns">
-            <h1><%- ed.school %></h1>
-            <h2><%- ed.degree %></h2>
-          </div>
-          <div class="three columns">
-            <h1><%- ed.location %></h1>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="three columns">
-            <!-- Nothing -->
-          </div>
-          <div class="nine columns">
-            <ul>
-              <% _.each(ed.bullets, function(bullet){ %>
-                <li class="<%= bullet.tags? bullet.tags.join(' '):'' %>"><%= bullet.description %></li>
-              <% }); %>
-            </ul>
-          </div>
-        </div>
       <% }); %>
 
       <div class="row new-section">
