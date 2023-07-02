@@ -33,23 +33,23 @@ var DynamicResume = function ($el) {
                 "description": "1904labs helps leaders digitally transform their business by implementing modern software and data solutions. Responsibilities included oversight of all engineers and solutions. This position reported to the Owner. Selected accomplishments:",
                 "bullets": [
                     {
-                        "description": "Lead a ~70-person engineering team to deliver amazing service to multiple enterprise customers.",
+                        "description": "Lead and managed a dynamic team of approximately 70 engineers, ensuring the delivery of exceptional service to multiple enterprise customers.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Owned the strategic roadmap, advised on GTM strategy, and coordinated sales and marketing efforts for our flagship solution: AI-Enabled Customer Service.",
+                        "description": "Orchestrated the strategic roadmap, providing guidance on the go-to-market strategy, and effectively coordinated sales and marketing initiatives for our flagship solution: AI-Enabled Customer Service.",
                         "tags": ["Leadership", "Software"]
                     },
                     {
-                        "description": "Proposed changes to Business Development and Sales to support expanded career tracks for engineers.",
+                        "description": "Spearheaded transformative changes to the Business Development and Sales departments, resulting in expanded career progression opportunities for engineers.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Mentored directors on leadership and gave career guidance to engineers.",
+                        "description": "Mentored and coached directors on effective leadership practices, fostering their growth and development, while providing valuable career guidance to individual engineers.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Received high praise for alignment and delegation efforts.",
+                        "description": "Garnered extensive acclaim for exceptional alignment and delegation efforts, enhancing overall team efficiency and productivity.",
                         "tags": ["Leadership"]
                     }
                 ]
@@ -57,9 +57,9 @@ var DynamicResume = function ($el) {
             {
                 "name": "Ricks-Aherne, Inc.",
                 "title": "Father",
-                "time": "2022",
+                "time": "early 2022",
                 "location": "St. Louis, MO",
-                "description": "Took a break to support my new family. Selected Accomplishments:",
+                "description": "Took a short break to support my new family. Selected Accomplishments:",
                 "bullets": [
                     {
                         "description": "Managed an estimated 3,000 successful diaper changes.",
@@ -78,10 +78,6 @@ var DynamicResume = function ($el) {
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": 'Pioneered "seamless" transitions between day and night shifts.',
-                        "tags": ["Leadership"]
-                    },
-                    {
                         "description": "Sustained high morale with captivating airplane noises.",
                         "tags": ["Leadership"]
                     },
@@ -96,21 +92,21 @@ var DynamicResume = function ($el) {
                 "description": "Kubos makes a cloud-based satellite Mission Control Platform. As the 4th employee in the company, my responsibilities spanned software engineering, management and support. Selected accomplishments:",
                 "bullets": [
                     {
-                        "description": "Defined program vision and developed large portions of our 2021 feature set",
+                        "description": "Spearheaded the establishment of the program vision and played a pivotal role in developing significant portions of the feature set.",
                         "skills": "[Ruby on Rails, React]",
                         "tags": ["Software", "Aerospace"]
                     },
                     {
-                        "description": "Improved API scope and performance",
+                        "description": "Significantly enhanced API scope and performance utilizing resulting in improved efficiency and user experience.",
                         "skills": "[GraphQL, Websockets, Python]",
                         "tags": ["Software", "Aerospace"]
                     },
                     {
-                        "description": "Owned execution schedules and customer engagement, coordinating several Independent Contractors.",
+                        "description": "Assumed ownership of execution schedules and customer engagement, successfully coordinating the efforts of multiple Independent Contractors to ensure seamless project delivery.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Provided support to existing on-orbit customers, including 24/7 LEOPS support.",
+                        "description": "Provided comprehensive support to existing on-orbit customers, including round-the-clock Launch and Early Orbit Phase Support (LEOPS), guaranteeing the smooth operation of satellite missions.",
                         "tags": ["Leadership", "Aerospace"]
                     },
                     {
