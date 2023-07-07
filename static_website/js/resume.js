@@ -33,23 +33,23 @@ var DynamicResume = function ($el) {
                 "description": "1904labs helps leaders digitally transform their business by implementing modern software and data solutions. Responsibilities included oversight of all engineers and solutions. This position reported to the Owner. Selected accomplishments:",
                 "bullets": [
                     {
-                        "description": "Lead a ~70-person engineering team to deliver amazing service to multiple enterprise customers.",
+                        "description": "Lead and managed a dynamic team of approximately 70 engineers, ensuring the delivery of exceptional service to multiple enterprise customers.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Owned the strategic roadmap, advised on GTM strategy, and coordinated sales and marketing efforts for our flagship solution: AI-Enabled Customer Service.",
-                        "tags": ["Leadership", "Software"]
-                    },
-                    {
-                        "description": "Proposed changes to Business Development and Sales to support expanded career tracks for engineers.",
+                        "description": "Orchestrated the strategic roadmap, providing guidance on the go-to-market strategy, and effectively coordinated sales and marketing initiatives for our flagship solution: AI-Enabled Customer Service.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Mentored directors on leadership and gave career guidance to engineers.",
+                        "description": "Spearheaded transformative changes to the Business Development and Sales departments, resulting in expanded career progression opportunities for engineers.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Received high praise for alignment and delegation efforts.",
+                        "description": "Mentored and coached directors on effective leadership practices, fostering their growth and development, while providing valuable career guidance to individual engineers.",
+                        "tags": ["Leadership"]
+                    },
+                    {
+                        "description": "Garnered extensive acclaim for exceptional alignment and delegation efforts, enhancing overall team efficiency and productivity.",
                         "tags": ["Leadership"]
                     }
                 ]
@@ -57,12 +57,12 @@ var DynamicResume = function ($el) {
             {
                 "name": "Ricks-Aherne, Inc.",
                 "title": "Father",
-                "time": "2022",
+                "time": "early 2022",
                 "location": "St. Louis, MO",
-                "description": "Took a break to support my new family. Selected Accomplishments:",
+                "description": "Took a short break to support my new family. Selected Accomplishments:",
                 "bullets": [
                     {
-                        "description": "Managed an estimated 3,000 successful diaper changes.",
+                        "description": "Performed an estimated 3,000 successful diaper changes.",
                         "tags": ["Leadership"]
                     },
                     {
@@ -75,10 +75,6 @@ var DynamicResume = function ($el) {
                     },
                     {
                         "description": "Oversaw a comprehensive, on-the-spot healthcare program specializing in kisses and ice packs.",
-                        "tags": ["Leadership"]
-                    },
-                    {
-                        "description": 'Pioneered "seamless" transitions between day and night shifts.',
                         "tags": ["Leadership"]
                     },
                     {
@@ -96,21 +92,21 @@ var DynamicResume = function ($el) {
                 "description": "Kubos makes a cloud-based satellite Mission Control Platform. As the 4th employee in the company, my responsibilities spanned software engineering, management and support. Selected accomplishments:",
                 "bullets": [
                     {
-                        "description": "Defined program vision and developed large portions of our 2021 feature set",
+                        "description": "Spearheaded the establishment of the program vision and played a pivotal role in developing significant portions of the feature set.",
                         "skills": "[Ruby on Rails, React]",
                         "tags": ["Software", "Aerospace"]
                     },
                     {
-                        "description": "Improved API scope and performance",
+                        "description": "Significantly enhanced API scope and performance utilizing resulting in improved efficiency and user experience.",
                         "skills": "[GraphQL, Websockets, Python]",
                         "tags": ["Software", "Aerospace"]
                     },
                     {
-                        "description": "Owned execution schedules and customer engagement, coordinating several Independent Contractors.",
+                        "description": "Assumed ownership of execution schedules and customer engagement, successfully coordinating the efforts of multiple Independent Contractors to ensure seamless project delivery.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Provided support to existing on-orbit customers, including 24/7 LEOPS support.",
+                        "description": "Provided comprehensive support to existing on-orbit customers, including round-the-clock Launch and Early Orbit Phase Support (LEOPS), guaranteeing the smooth operation of satellite missions.",
                         "tags": ["Leadership", "Aerospace"]
                     },
                     {
@@ -127,19 +123,19 @@ var DynamicResume = function ($el) {
                 "description": "1904labs helps leaders digitally transform their business by implementing modern software and data solutions. The Modern Software Engineering Practice contains all Full Stack, DevOps, and Mobile Engineers in the company. Selected accomplishments:",
                 "bullets": [
                     {
-                        "description": "Managed a personnel budget in excess of $5M and discretionary budget in excess of $40k",
+                        "description": "Successfully managed a substantial personnel budget exceeding $5 million and a discretionary budget exceeding $40,000, ensuring optimal allocation of resources for the Modern Software Engineering Practice.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Lead the creation of the Study Group Program, generating value through knowledge reuse and mentorship",
+                        "description": "Pioneered the creation of the Study Group Program, a groundbreaking initiative that facilitated knowledge reuse and mentorship, resulting in significant value generation for the organization.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Standardized Contribution Reviews using a self-directed process to preserve autonomy and encourage growth.",
+                        "description": "Implemented a standardized Contribution Reviews process, empowering individuals with a self-directed approach that preserved autonomy while fostering personal and professional growth.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Owned weekly Leadership Touchpoint meetings and coordinated strategic initiatives.",
+                        "description": "Took ownership of weekly Leadership Touchpoint meetings, facilitating effective communication and coordination of strategic initiatives within the Modern Software Engineering Practice.",
                         "tags": ["Leadership"]
                     },
                     {
@@ -156,31 +152,31 @@ var DynamicResume = function ($el) {
                 "description": "Sauce provides a cloud-based platform for the automated testing of web and mobile applications. The scope of my responsibilities covered all aspects of the Continouos Integration pipeline. Selected accomplishments:",
                 "bullets": [
                     {
-                        "description": "Pioneered several large evolutions in the development process, saving countless hours of developer time. Examples include automated branch testing, custom integrations with Slack, a \"follow the sun\" PagerDuty setup and Gated Commits.",
+                        "description": "Spearheaded multiple significant evolutions in the development process, introducing game-changing features such as automated branch testing, custom Slack integrations, a robust \"follow the sun\" PagerDuty setup, and Gated Commits. These advancements resulted in substantial time savings for developers.",
                         "skills": "[Jenkins, Python, Coffeescript, Groovy]",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Shaved $120,000 from the annual AWS bill by re-architecting our data storage layer.",
+                        "description": "Achieved a remarkable cost reduction of $120,000 per year by successfully re-architecting the data storage layer.",
                         "skills": "[AWS S3, CloudWatch]",
                         "tags": ["Leadership", "Software"]
                     },
                     {
-                        "description": "Managed a small team and served as AGILE Scrum Master.",
+                        "description": "Expertly managed a small team while also serving as an AGILE Scrum Master, facilitating efficient and productive project execution and ensuring seamless collaboration within the team.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Designed and built several web components.",
+                        "description": "Demonstrated exceptional skills in designing and building various web components to enhance the functionality and user experience of the Sauce platform.",
                         "skills": "[Angular, Javascript]",
                         "tags": ["Software"]
                     },
                     {
-                        "description": "Aced continuing education classes in machine learning.",
+                        "description": "Demonstrated a commitment to continuous learning by excelling in continuing education classes focused on machine learning, gaining proficiency in popular frameworks.",
                         "skills": "[Tensorflow, Octave]",
                         "tags": ["Software"]
                     },
                     {
-                        "description": "Mentored junior engineers and received accolades for my documentation.",
+                        "description": "Mentored junior engineers, provided valuable guidance and support, and received recognition for outstanding documentation practices, contributing to knowledge sharing and team effectiveness.",
                         "tags": ["Leadership"]
                     },
 
@@ -194,59 +190,59 @@ var DynamicResume = function ($el) {
                 "description": "Planet Labs is multi-billion dollar Earth imaging company. As the 7th employee, I wore many hats, moving from the Spacecraft team to Manufacturing to Mission Operations. All told, I had an active role in designing, building, testing and flying the first 113 satellites. Selected accomplishments:",
                 "bullets": [
                     {
-                        "description": "Designed and developed 2/3 of the microcontroller code for our first spacecraft and significant portions for our second. This code handled power, inter-processor communication, scheduling, sensor acquisition, telemetry and commands. ",
+                        "description": "Designed and developed the majority of the microcontroller code for the first spacecraft, handling critical functions such as power management, inter-processor communication, scheduling, sensor acquisition, telemetry, and commands. Also contributed significantly to the codebase for the second spacecraft. ",
                         "skills": "[C on PIC, then C on ARM]",
                         "tags": ["Software", "Aerospace"]
                     },
                     {
-                        "description": "Implemented the camera software responsible for the first 10,000 photos. ",
+                        "description": "Implemented the camera software responsible for capturing the first 10,000 photos. ",
                         "skills": "[C++ on SBC]",
+                        "tags": ["Software", "Aerospace"]
+                    },
+                    {
+                        "description": "Established and maintained the company's continuous integration and deployment system, starting with Vagrant and shell scripts, evolving to Jenkins and Ansible on OpenStack, and ultimately deploying Jenkins and Ansible on AWS. ",
+                        "skills": "[Vagrant, Jenkins, Ansible, OpenStack, AWS]",
                         "tags": ["Software"]
                     },
                     {
-                        "description": "Started and maintained the company's continuous integration and deployment system. ",
-                        "skills": "[first Vagrant/shell scripts, then Jenkins/Ansible on OpenStack, finally Jenkins/Ansible on AWS]",
+                        "description": "Co-initiated and maintained the company's code review system. ",
+                        "skills": "[Redmine, Phabricator]",
                         "tags": ["Software"]
                     },
                     {
-                        "description": "Co-started and maintained the company's code review system. ",
-                        "skills": "[Redmine, then Phabricator]",
-                        "tags": ["Software"]
-                    },
-                    {
-                        "description": "Promoted to Lead the Mission Operations team through Flock 1a. ",
+                        "description": "Promoted to lead the Mission Operations team during the Flock 1a project, overseeing critical operations. ",
                         "tags": ["Aerospace", "Leadership"]
                     },
                     {
-                        "description": "Architected/programmed large portions of Mission Control. ",
+                        "description": "Architected and programmed substantial components of the Mission Control system. ",
                         "skills": "[Python/Django on Postgres, with monitoring (Nagios, New Relic and ElasticSearch), satellite tasking (Celery and RabbitMQ), caching (Memcache and Redis), and user interfaces(Javascript/Jquery/D3/High Charts/Graphite/Bootstrap and Backbone)]",
                         "tags": ["Software", "Aerospace"]
                     },
                     {
-                        "description": "Drove long-term strategy of team composition. Gave performance reviews, interviews and managed employee lifecycle before we had an HR department.",
+                        "description": "Played a pivotal role in driving the long-term strategy for team composition. Conducted performance reviews, interviews, and managed the employee lifecycle before the company established an HR department. ",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Expanded remote worker infrastructure by evangelizing ChatOps. ",
+                        "description": "Led the expansion of remote worker infrastructure by advocating for the adoption of ChatOps. ",
                         "skills": "[HipChat/Coffeescript]",
                         "tags": ["Software", "Leadership"]
                     },
                     {
-                        "description": "Co-lead software development for Manufacturing and Production. ",
+                        "description": "Co-lead software development efforts for the Manufacturing and Production teams. ",
                         "skills": "[REST API in Python/Flask, website in Python/Django, GSE in Arduino/RaspberryPi]",
                         "tags": ["Software"]
                     },
                     {
-                        "description": "Added frontend unit testing to Manufacturing Team's CI process. ",
+                        "description": "Introduced frontend unit testing to the Manufacturing Team's continuous integration process. ",
                         "skills": "[Backbone/Jasmine]",
                         "tags": ["Software"]
                     },
                     {
-                        "description": "Mentored several interns and new hires across multiple teams.",
+                        "description": "Mentored numerous interns and new hires across multiple teams, providing guidance and support to foster their professional growth. ",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Gave tours to distinguished guests and actively shaped company culture, advocating for the unique artist-in-residence program.",
+                        "description": "Gave tours to distinguished guests and actively shaped company culture, advocating for the unique artist-in-residence program. ",
                         "tags": ["Leadership"]
                     }
                 ]
@@ -274,7 +270,7 @@ var DynamicResume = function ($el) {
                         "tags": ["Software"]
                     },
                     {
-                        "description": "Refactored Mission Control as a website",
+                        "description": "Refactored Mission Control as a website, enhancing functionality and user experience.",
                         "skills": "[PHP/MySQL]",
                         "tags": ["Software"]
                     },
@@ -293,12 +289,12 @@ var DynamicResume = function ($el) {
                         "tags": ["Software"]
                     },
                     {
-                        "description": "Managed both graduates and undergraduates.",
+                        "description": "Managed a team consisting of both graduate and undergraduate students, providing guidance and supervision throughout their involvement in various projects.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Designed the SERC website and created/maintained most pictures and videos of the program.",
-                        "skills": "[Photoshop/MS Movie Maker/Paint.net]",
+                        "description": "Designed the SERC website and took responsibility for creating and maintaining visual content, including pictures and videos. ",
+                        "skills": "[Photoshop, MS Movie Maker, Paint.net]",
                         "tags": ["Software"]
                     }
                 ]
@@ -453,12 +449,13 @@ var DynamicResume = function ($el) {
         ],
         "languages": ["English (C2-Native)",
                       "German (A2-Waystage)"],
-        "personal": ["Certified Rollerblading Instructor",
-                     "SCUBA diver",
-                     "Snowboarder",
-                     "Drummer",
-                     "Hiker",
-                     "Amateur Photographer"]
+        "personal": ["Flying",
+                     "Rollerblading",
+                     "SCUBA",
+                     "Snowboard",
+                     "Drums",
+                     "Hiking",
+                     "Photography"]
     };
 
     $el.append(template(resume));
