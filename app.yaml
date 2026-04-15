@@ -1,6 +1,4 @@
-runtime: python27
-api_version: 1
-threadsafe: yes
+runtime: python313
 
 handlers:
 #root
@@ -15,11 +13,11 @@ handlers:
 
 # Redirect to Educational Videos
 - url: /learn/mocks
-  script: main.application
+  script: auto
 
 # Redirect to Blog
 - url: /blog
-  script: main.application
+  script: auto
 
 # Dynamic resume
 - url: /resume
@@ -37,7 +35,3 @@ handlers:
 - url: /.*
   static_files: static_website/not_found.html
   upload: static_website/not_found.html
-
-libraries:
-- name: webapp2
-  version: "2.5.2"
