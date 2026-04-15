@@ -16,7 +16,7 @@ var DynamicResume = function ($el) {
 
     var resume = {
         "biographical": {
-            "name": "Michael Ricks-Aherne",
+            "name": "Michael Aherne",
             "email": "miketwo@gmail.com",
             "website": "miketwo.net",
             "phone": "+1 (240) 423-7355",
@@ -55,7 +55,7 @@ var DynamicResume = function ($el) {
                 ]
             },
             {
-                "name": "Ricks-Aherne, Inc.",
+                "name": "Aherne, Inc.",
                 "title": "Father",
                 "time": "early 2022",
                 "location": "St. Louis, MO",
@@ -498,5 +498,3 @@ var DynamicResume = function ($el) {
     };
 
 };
-
-
