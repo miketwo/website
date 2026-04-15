@@ -26,6 +26,41 @@ var DynamicResume = function ($el) {
         },
         "experience": [
             {
+                "name": "Umbra",
+                "title": "Director, Software Engineering",
+                "time": "2024-Present",
+                "location": "Remote",
+                "description": "Umbra builds and operates a commercial SAR constellation and the software systems that plan missions, fly spacecraft, and deliver data products. I lead software engineering across GroundOps, scheduling, data, and developer experience while working closely with flight software, operations, and mission solutions. Selected accomplishments:",
+                "bullets": [
+                    {
+                        "description": "Identified and closed critical capability gaps across data, GroundOps, scheduling, and DevOps by writing reqs, handling noisy pipelines, training managers on interviewing, and hiring high-impact engineers including Umbra's first Staff Data Engineer.",
+                        "tags": ["Leadership"]
+                    },
+                    {
+                        "description": "Rebuilt the hiring funnel by migrating from Bamboo to Workable and adding Coderbyte, geo-mapping, cheating-detection, and LLM-assisted resume scoring, cutting manual resume triage by roughly 80 percent.",
+                        "skills": "[Workable, Coderbyte, LLMs]",
+                        "tags": ["Leadership", "Software"]
+                    },
+                    {
+                        "description": "Co-authored and published a software-wide career ladder and management matrix, giving engineers and managers a clearer growth framework and a reusable foundation for scaled performance management.",
+                        "tags": ["Leadership"]
+                    },
+                    {
+                        "description": "Led technical discovery and architectural direction for Scheduling V2 while shaping Umbra's approach to mission planning and data capabilities, positioning the organization for a stronger long-term scheduling solution.",
+                        "tags": ["Leadership", "Software", "Aerospace"]
+                    },
+                    {
+                        "description": "Bridged software, flight, operations, and mission-facing teams by loaning engineers into flight software work, aligning C3 and SpaceOps efforts, and driving Block 3 and Block 4 architecture conversations that improved cross-org execution.",
+                        "tags": ["Leadership", "Aerospace"]
+                    },
+                    {
+                        "description": "Advocated early for high-impact technical changes including layered spacecraft software architecture, canary and rollback policies, idempotent service patterns, and onboard compression and digital deramp improvements before incidents made those needs obvious.",
+                        "skills": "[Architecture, OTA, Kafka]",
+                        "tags": ["Software", "Aerospace"]
+                    }
+                ]
+            },
+            {
                 "name": "1904Labs",
                 "title": "Senior Director, Practices & Solutions",
                 "time": "2022-2023",
