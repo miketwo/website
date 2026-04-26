@@ -1,0 +1,8 @@
+{
+  "name": "miketwo-website-dev-tools",
+  "private": true,
+  "scripts": {
+    "resume:inspect": "node scripts/inspect-resume.mjs",
+    "resume:inspect:print": "node scripts/inspect-resume.mjs --page=resume-print.html --media=print"
+  }
+}

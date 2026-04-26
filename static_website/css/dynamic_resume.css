@@ -4,232 +4,653 @@
 
 @font-face {
     font-family: Constantine;
-    src: url('/fonts/Constantine.ttf');
-    }
-
-#dynamic_resume li {
-   list-style-type: disc;
-   margin-bottom: 0px;
-   line-height: 1.3em;
+    src: url('../fonts/Constantine.ttf');
 }
 
-#dynamic_resume ul {
-   margin-left: 18px;
-   margin-top: 0px;
+:root {
+    --resume-paper: #ffffff;
+    --resume-ink: #111111;
+    --resume-accent: #240280;
+    --resume-link: #11ABB0;
+    --resume-background: #ececf0;
+    --resume-shadow: 0 18px 42px rgba(0, 0, 0, 0.09);
+    --resume-row-gap: 22px;
 }
 
-#dynamic_resume p {
-   margin: 0 0 10px 0;
-}
-
-#dynamic_resume .right {
-   text-align: right;
-}
-
-/* This div represents a single job, school or publication.
-It handles the spacing between those things*/
-#dynamic_resume .each {
-   margin: 0 0 20px 0;
-}
-
+html,
 body {
-    margin: 0 0 0 0;
-    line-height: 120%;
+    min-height: 100%;
+}
+
+body.resume-page {
+    margin: 0;
+    line-height: 1.35;
+    background: var(--resume-background);
+    color: var(--resume-ink);
+}
+
+body.resume-print-page {
+    background: #dfe3e8;
+}
+
+body.resume-page * {
+    box-sizing: border-box;
+}
+
+.resume-toolbar {
+    margin: 0;
+    padding: 12px 18px;
+    z-index: 900;
+    background: rgba(78, 78, 82, 0.96);
+}
+
+.resume-toolbar .btn-group {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 12px 8px 0;
+}
+
+.resume-toolbar .btn {
+    display: inline-block;
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    font: 13px/1 'opensans-bold', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    background: #4c8fcf;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.resume-toolbar .btn.active,
+.resume-toolbar .btn:focus {
+    outline: none;
+}
+
+.resume-toolbar .btn:hover {
+    color: #ffffff;
+    filter: brightness(1.05);
+}
+
+.resume-toolbar .btn-info {
+    background: #4c8fcf;
+    border-color: #4c8fcf;
+}
+
+.resume-toolbar .btn-primary {
+    background: #365f9c;
+    border-color: #365f9c;
+}
+
+.resume-toolbar .btn-primary.active {
+    background: #223c63;
+    border-color: #223c63;
 }
 
 #buttons {
-    margin: 0 0 0 0;
-    margin-bottom: 70px;
-    padding: 0 0 0 0;
-    z-index: 900;
-    background-color: gray;
-}
-
-#buttons p {
-    font-weight: bold;
-    margin-left: 10px;
-    margin-top: 10px;
-    color: white;
-}
-
-#buttons .btn-group {
-    margin-left: 10px;
-    margin-bottom: 10px;
-    color: white;
-}
-
-/* dynamic css
------------------------------------------------------------------------- */
-@media only screen and (max-width: 767px) {
-  /* This helps keep the buttons looking nice on mobile.
-  */
-  #buttons .btn {
-    font-size: 12px;
-    font-size: 3.3vw;
-    padding: 3px 6px;
-  }
-
-  /* For smaller devices, use all the real-estate */
-  #dynamic_resume .row {
-      max-width: none;
-   }
-
-   #dynamic_resume .columns {
-      padding: 0px;
-   }
+    position: sticky;
+    top: 0;
 }
 
 #dynamic_resume {
-   background: #fff;
-   padding-top: 90px;
-   padding-bottom: 72px;
-   overflow: hidden;
-   color: black;
+    width: min(100%, 8.5in);
+    margin: 24px auto 48px;
+    padding: 0.5in 0.55in 0.58in;
+    background: var(--resume-paper);
+    color: var(--resume-ink);
+    font-size: 15px;
+    overflow: visible;
+    box-shadow: var(--resume-shadow);
+}
+
+body.resume-print-page #dynamic_resume {
+    margin-top: 20px;
+}
+
+/* Resume print-page tuning knobs.
+ * These affect:
+ * - `/resume-print.html` as viewed in the browser
+ * - the rasterized `downloads/resume.pdf` export
+ */
+body.resume-print-page #dynamic_resume {
+    padding: 0.34in 0.34in 0.38in;
+    font-size: 13.5px;
+}
+
+body.resume-print-page #dynamic_resume .resume-row {
+    gap: 14px;
+}
+
+body.resume-print-page #dynamic_resume .resume-col--photo,
+body.resume-print-page #dynamic_resume .resume-col--date,
+body.resume-print-page #dynamic_resume .resume-col--spacer,
+body.resume-print-page #dynamic_resume .resume-col--meta {
+    flex: 0 0 17%;
+    max-width: 17%;
+}
+
+body.resume-print-page #dynamic_resume .titleblock {
+    margin-bottom: 0.14in;
+}
+
+body.resume-print-page #dynamic_resume .titleblock h1 {
+    font-size: 38px;
+}
+
+body.resume-print-page #dynamic_resume .titleblock h2 {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+body.resume-print-page #dynamic_resume .profile-pic {
+    width: 98px;
+    height: 98px;
+}
+
+body.resume-print-page #dynamic_resume .resume-contact-line {
+    font-size: 10.75px;
+    line-height: 1.18;
+}
+
+body.resume-print-page #dynamic_resume h1 {
+    font-size: 13.75px;
+    line-height: 1.05;
+    letter-spacing: 0.02em;
+}
+
+body.resume-print-page #dynamic_resume h2 {
+    font-size: 11.75px;
+    line-height: 1.09;
+}
+
+body.resume-print-page #dynamic_resume p,
+body.resume-print-page #dynamic_resume li,
+body.resume-print-page #dynamic_resume b {
+    font-size: 12.1px;
+    line-height: 1.2;
+}
+
+body.resume-print-page #dynamic_resume p {
+    margin-bottom: 5px;
+}
+
+body.resume-print-page #dynamic_resume ul {
+    padding-left: 1.05em;
+    list-style: disc outside;
+}
+
+body.resume-print-page #dynamic_resume li {
+    display: list-item;
+    margin-bottom: 2px;
+}
+
+body.resume-print-page #dynamic_resume .new-section {
+    margin-top: 0.02in;
+}
+
+body.resume-print-page #dynamic_resume .new-section h1 {
+    margin-bottom: 5px;
+    font-size: 27px;
+}
+
+body.resume-print-page #dynamic_resume .resume-row--heading {
+    margin-bottom: 1px;
+}
+
+body.resume-print-page #dynamic_resume .resume-row--detail,
+body.resume-print-page #dynamic_resume .resume-row--simple {
+    margin-bottom: 10px;
+}
+
+body.resume-print-page #dynamic_resume .resume-row--detail-lead {
+    margin-bottom: 2px;
+}
+
+body.resume-print-page #dynamic_resume .resume-row--detail-follow {
+    margin-top: 0;
 }
 
 #dynamic_resume .row {
-   max-width: 80%;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+#dynamic_resume .resume-row {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--resume-row-gap);
+}
+
+#dynamic_resume .resume-row > .columns {
+    float: none;
+    min-width: 0;
+    padding: 0;
+}
+
+#dynamic_resume .resume-col--photo,
+#dynamic_resume .resume-col--date,
+#dynamic_resume .resume-col--spacer {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+#dynamic_resume .resume-col--identity,
+#dynamic_resume .resume-col--main,
+#dynamic_resume .resume-col--detail-main {
+    flex: 1 1 auto;
+}
+
+#dynamic_resume .resume-col--meta {
+    flex: 0 0 20%;
+    max-width: 20%;
+    text-align: right;
 }
 
 #dynamic_resume .titleblock {
-    margin-bottom: 30px;
+    margin-bottom: 0.28in;
+    align-items: center;
 }
 
 #dynamic_resume .titleblock h1 {
-    font: 36px/42px 'opensans-bold', sans-serif;
-    font-family: Constantine;
-    margin-bottom: 0px;
+    margin: 0;
+    font: 46px/0.95 Constantine, 'opensans-bold', sans-serif;
+    letter-spacing: 0;
 }
 
 #dynamic_resume .titleblock h2 {
-    font: 24px/24px 'opensans-regular', sans-serif;
-    margin-bottom: 30px;
+    margin: 8px 0 0;
+    font: 19px/1.15 'opensans-bold', sans-serif;
+    color: var(--resume-accent);
 }
-
 
 #dynamic_resume .profile-pic {
-   position: relative;
-   width: 150px;
-   height: 150px;
-   border-radius: 100%;
+    display: block;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-#dynamic_resume a, #dynamic_resume a:visited  { color: #11ABB0; }
-#dynamic_resume a:hover, #dynamic_resume a:focus { color: #313131; }
-
-#dynamic_resume b {
-   line-height: 1.3em;
+#dynamic_resume .resume-contact-line {
+    font-size: 14px;
+    line-height: 1.25;
 }
 
 #dynamic_resume h1 {
-   font: 17px/17px 'opensans-bold', sans-serif;
-
-   font-family: Constantine;
-   text-transform: uppercase;
-   letter-spacing: 1px;
-   margin-bottom: 0px;
-   font-weight: 900;
-   /* text-align: right; */
+    margin: 0;
+    font: 18px/1.1 Constantine, 'opensans-bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 900;
 }
 
-#dynamic_resume h1 span {
-   border-bottom: 3px solid #11ABB0;
-   padding-bottom: 6px;
-}
 #dynamic_resume h2 {
-   font: 17px/24px 'opensans-bold', sans-serif;
-   font-family: Constantine;
-   color: rgb(36,2,128);
-   margin-bottom: 6px;
+    margin: 2px 0 0;
+    font: 17px/1.2 Constantine, 'opensans-bold', sans-serif;
+    color: var(--resume-accent);
 }
 
 #dynamic_resume h3 {
-   font: 25px/30px 'opensans-bold', sans-serif;
+    font: 25px/30px 'opensans-bold', sans-serif;
 }
 
-#dynamic_resume .header-col { padding-top: 9px; }
-#dynamic_resume .main-col { padding-right: 10%; }
-
-#education, #experience, #skills {
-   margin-bottom: 0px;
-   padding-bottom: 0px;
+#dynamic_resume p {
+    margin: 0 0 8px;
 }
 
-#dynamic_resume .info {
-   font: 16px/24px 'librebaskerville-italic', serif;
-   color: #6E7881;
-   margin-bottom: 18px;
-   margin-top: 9px;
+#dynamic_resume ul {
+    margin: 0;
+    padding-left: 1.25em;
+    list-style: disc outside;
 }
-#dynamic_resume .info span {
-   margin-right: 5px;
-   margin-left: 5px;
+
+#dynamic_resume li {
+    display: list-item;
+    margin-bottom: 2px;
+    line-height: 1.28;
 }
-#dynamic_resume .date {
-   font: 15px/24px 'opensans-regular', sans-serif;
-   margin-top: 6px;
+
+#dynamic_resume a,
+#dynamic_resume a:visited {
+    color: var(--resume-link);
+}
+
+#dynamic_resume a:hover,
+#dynamic_resume a:focus {
+    color: #313131;
+}
+
+#dynamic_resume b {
+    line-height: 1.3em;
 }
 
 #dynamic_resume span {
-   font-weight: 900;
+    font-weight: 900;
+}
+
+#dynamic_resume .new-section {
+    margin-top: 0.08in;
 }
 
 #dynamic_resume .new-section h1 {
-   font-weight: 1200;
-   font-size: 2em;
-   margin-bottom: 10px;
-   line-height: 2em;
+    margin-bottom: 10px;
+    font-size: 2.1em;
+    line-height: 1.05;
+}
+
+#dynamic_resume .resume-item,
+#dynamic_resume .titleblock,
+#dynamic_resume .new-section,
+#dynamic_resume .each {
+    margin-top: 15px;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+}
+
+#dynamic_resume .resume-row--heading {
+    margin-bottom: 3px;
+    align-items: baseline;
+}
+
+#dynamic_resume .resume-row--detail,
+#dynamic_resume .resume-row--simple {
+    margin-bottom: 14px;
+}
+
+#dynamic_resume .resume-row--detail-lead {
+    margin-bottom: 6px;
+}
+
+#dynamic_resume .resume-row--detail-follow {
+    margin-top: 0;
+}
+
+#dynamic_resume .resume-bullets--lead,
+#dynamic_resume .resume-bullets--follow {
+    margin-bottom: 0;
 }
 
 .subdued {
-    color: #D8D8D8;
+    color: #c9c9cf;
 }
 
 .highlight {
-    background-color: #FFFFEC;
+    background-color: #ffffec;
 }
 
-/* override styles when printing */
-@media print {
+body.resume-print-page footer {
+    display: none;
+}
 
-   #buttons-sticky-wrapper, buttons, footer, header {
-      display: none;
-   }
-
-   #dynamic_resume, .row {
-      max-width: none !important;
-      width: 100% !important;
-      padding: 0px;
-   }
-
-   #dynamic_resume :not(.titleblock) .twelve {
-      padding: 0px;
-   }
-
-   #dynamic_resume :not(.titleblock) .three {
-      width: 20%;
-      padding: 0px;
-   }
-
-   #dynamic_resume :not(.titleblock) .six {
-      padding: 0px;
-   }
-
-   #dynamic_resume :not(.titleblock) .nine {
-      width: 80%;
-      padding: 0px;
-   }
-
-    @page {
-      margin: 1cm;
-   }
-
-   img {
-      max-width: 100% !important;
-      /* page-break-inside: avoid; */
-   }
-
-   a[href]:after {
-      content: none !important;
+@media only screen and (max-width: 900px) {
+    #dynamic_resume {
+        width: calc(100% - 32px);
+        padding: 32px 28px 36px;
     }
- }
+
+    #dynamic_resume .titleblock h1 {
+        font-size: 42px;
+    }
+
+    #dynamic_resume .resume-row {
+        gap: 18px;
+    }
+
+    #dynamic_resume .resume-col--photo,
+    #dynamic_resume .resume-col--date,
+    #dynamic_resume .resume-col--spacer,
+    #dynamic_resume .resume-col--meta {
+        flex-basis: 20%;
+        max-width: 20%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .resume-toolbar {
+        position: static;
+        padding: 12px;
+    }
+
+    .resume-toolbar .btn-group {
+        display: flex;
+        margin-right: 0;
+    }
+
+    #dynamic_resume {
+        width: 100%;
+        margin: 0;
+        padding: 24px 18px 30px;
+        box-shadow: none;
+    }
+
+    #dynamic_resume .resume-row {
+        display: block;
+    }
+
+    #dynamic_resume .resume-col--photo,
+    #dynamic_resume .resume-col--date,
+    #dynamic_resume .resume-col--spacer,
+    #dynamic_resume .resume-col--identity,
+    #dynamic_resume .resume-col--main,
+    #dynamic_resume .resume-col--detail-main,
+    #dynamic_resume .resume-col--meta {
+        max-width: none;
+        text-align: left;
+    }
+
+    #dynamic_resume .titleblock h1 {
+        font-size: 44px;
+        margin-top: 16px;
+    }
+
+    #dynamic_resume .titleblock h2 {
+        font-size: 19px;
+    }
+
+    #dynamic_resume .profile-pic {
+        width: 124px;
+        height: 124px;
+    }
+
+    #dynamic_resume .resume-col--meta,
+    #dynamic_resume .resume-row--heading {
+        margin-top: 8px;
+    }
+}
+
+/* Browser Print / "Print to PDF" tuning knobs.
+ * These only affect real print media, not the raster PDF export script.
+ */
+@page {
+    size: letter;
+    margin: 0.75in 0.15in 0.75in 0.15in;
+}
+
+@media print {
+    html,
+    body,
+    body.resume-page {
+        background: #ffffff !important;
+    }
+
+    .resume-toolbar,
+    footer,
+    header,
+    #go-top {
+        display: none !important;
+    }
+
+    #dynamic_resume,
+    #dynamic_resume * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    #dynamic_resume {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        font-size: 11.5px;
+    }
+
+    #dynamic_resume .resume-row {
+        gap: 14px;
+    }
+
+    #dynamic_resume .resume-col--photo,
+    #dynamic_resume .resume-col--date,
+    #dynamic_resume .resume-col--spacer,
+    #dynamic_resume .resume-col--meta {
+        flex: 0 0 17%;
+        max-width: 17%;
+    }
+
+    #dynamic_resume .titleblock {
+        margin-top: -0.50in;
+        margin-bottom: 0.14in;
+    }
+
+    #dynamic_resume .titleblock h1 {
+        font-size: 37px;
+    }
+
+    #dynamic_resume .titleblock h2 {
+        margin-top: 5px;
+        font-size: 13.75px;
+    }
+
+    #dynamic_resume .profile-pic {
+        width: 98px;
+        height: 98px;
+    }
+
+    #dynamic_resume .resume-contact-line {
+        font-size: 10.75px;
+        line-height: 1.18;
+    }
+
+    #dynamic_resume h1 {
+        font-size: 13.75px;
+        line-height: 1.05;
+        letter-spacing: 0.02em;
+    }
+
+    #dynamic_resume h2 {
+        font-size: 11.25px;
+        line-height: 1.09;
+    }
+
+    #dynamic_resume p,
+    #dynamic_resume li,
+    #dynamic_resume b {
+        font-size: 10.5px;
+        line-height: 1.1;
+    }
+
+    #dynamic_resume p {
+        margin-bottom: 4px;
+    }
+
+    #dynamic_resume ul {
+        padding-left: 1.25em;
+    }
+
+    #dynamic_resume li {
+        margin-bottom: 2px;
+    }
+
+    #dynamic_resume .new-section {
+        margin-top: 0.02in;
+    }
+
+    #dynamic_resume .new-section h1 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 27px;
+    }
+
+    #dynamic_resume .resume-row--heading {
+        margin-bottom: 1px;
+    }
+
+    /* Align company/title with the summary paragraph, not the bullet text. */
+    #dynamic_resume .resume-row--heading .resume-col--main {
+        position: relative;
+        left: -1.25em;
+    }
+
+    #dynamic_resume .resume-row--detail,
+    #dynamic_resume .resume-row--simple {
+        margin-bottom: 10px;
+    }
+
+    /* WeasyPrint and browser print both paginate block flow more reliably than flex rows.
+     * Flatten detail/simple rows only in print so long job bodies can split across pages.
+     */
+    #dynamic_resume .resume-row--detail,
+    #dynamic_resume .resume-row--simple {
+        display: block;
+    }
+
+    #dynamic_resume .resume-row--detail .resume-col--spacer,
+    #dynamic_resume .resume-row--simple .resume-col--spacer {
+        display: none;
+    }
+
+    #dynamic_resume .resume-row--detail .resume-col--detail-main,
+    #dynamic_resume .resume-row--simple .resume-col--detail-main {
+        margin-left: calc(17% + 14px);
+    }
+
+    #dynamic_resume .resume-row--simple .resume-col--meta {
+        display: none;
+    }
+
+    /* Keep only the top of a job together. Everything after the first bullet can flow. */
+    #dynamic_resume .resume-item-lead {
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+
+    /* Let long jobs flow across pages while keeping section headers intact. */
+    #dynamic_resume .resume-item,
+    #dynamic_resume .each {
+        break-inside: auto;
+        page-break-inside: auto;
+    }
+
+    #dynamic_resume .titleblock,
+    #dynamic_resume .new-section {
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+
+    /* Allow job bodies to flow once the lead block has been placed. */
+    #dynamic_resume .resume-row--detail,
+    #dynamic_resume .resume-row--detail .resume-col--detail-main,
+    #dynamic_resume .resume-bullets {
+        break-inside: auto;
+        page-break-inside: auto;
+    }
+
+    #dynamic_resume .resume-bullets--follow,
+    #dynamic_resume .resume-bullets--follow li {
+        break-inside: auto;
+        page-break-inside: auto;
+    }
+
+    #dynamic_resume .resume-bullet--first,
+    #dynamic_resume li {
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+
+    #dynamic_resume a[href]:after {
+        content: none !important;
+    }
+}
