@@ -19,7 +19,7 @@ var DynamicResume = function ($el) {
     $el.append(template(resume));
 
     function clearHighlights() {
-        $el.find(".subdued, .highlight").removeClass("subdued highlight", 300);
+        $el.find(".subdued, .highlight").removeClass("subdued highlight");
         $("[data-highlight='reset']").addClass("active");
         $("[data-highlight]").not("[data-highlight='reset']").removeClass("active");
     }

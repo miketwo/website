@@ -47,13 +47,18 @@ body.resume-page * {
 .resume-toolbar .btn-group {
     display: inline-flex;
     flex-wrap: wrap;
+    align-items: stretch;
     gap: 8px;
     margin: 0 12px 8px 0;
 }
 
 .resume-toolbar .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 36px;
     padding: 8px 12px;
+    margin-bottom: 0;
     border: 1px solid transparent;
     border-radius: 6px;
     font: 13px/1 'opensans-bold', sans-serif;
@@ -314,6 +319,11 @@ body.resume-print-page #dynamic_resume .resume-row--detail-follow {
     line-height: 1.28;
 }
 
+#dynamic_resume li,
+#dynamic_resume .titleblock span {
+    transition: color 180ms ease, background-color 180ms ease;
+}
+
 #dynamic_resume a,
 #dynamic_resume a:visited {
     color: var(--resume-link);
@@ -387,77 +397,77 @@ body.resume-print-page footer {
 }
 
 @media only screen and (max-width: 900px) {
-    #dynamic_resume {
+    body:not(.resume-print-page) #dynamic_resume {
         width: calc(100% - 32px);
         padding: 32px 28px 36px;
     }
 
-    #dynamic_resume .titleblock h1 {
+    body:not(.resume-print-page) #dynamic_resume .titleblock h1 {
         font-size: 42px;
     }
 
-    #dynamic_resume .resume-row {
+    body:not(.resume-print-page) #dynamic_resume .resume-row {
         gap: 18px;
     }
 
-    #dynamic_resume .resume-col--photo,
-    #dynamic_resume .resume-col--date,
-    #dynamic_resume .resume-col--spacer,
-    #dynamic_resume .resume-col--meta {
+    body:not(.resume-print-page) #dynamic_resume .resume-col--photo,
+    body:not(.resume-print-page) #dynamic_resume .resume-col--date,
+    body:not(.resume-print-page) #dynamic_resume .resume-col--spacer,
+    body:not(.resume-print-page) #dynamic_resume .resume-col--meta {
         flex-basis: 20%;
         max-width: 20%;
     }
 }
 
 @media only screen and (max-width: 767px) {
-    .resume-toolbar {
+    body:not(.resume-print-page) .resume-toolbar {
         position: static;
         padding: 12px;
     }
 
-    .resume-toolbar .btn-group {
+    body:not(.resume-print-page) .resume-toolbar .btn-group {
         display: flex;
         margin-right: 0;
     }
 
-    #dynamic_resume {
+    body:not(.resume-print-page) #dynamic_resume {
         width: 100%;
         margin: 0;
         padding: 24px 18px 30px;
         box-shadow: none;
     }
 
-    #dynamic_resume .resume-row {
+    body:not(.resume-print-page) #dynamic_resume .resume-row {
         display: block;
     }
 
-    #dynamic_resume .resume-col--photo,
-    #dynamic_resume .resume-col--date,
-    #dynamic_resume .resume-col--spacer,
-    #dynamic_resume .resume-col--identity,
-    #dynamic_resume .resume-col--main,
-    #dynamic_resume .resume-col--detail-main,
-    #dynamic_resume .resume-col--meta {
+    body:not(.resume-print-page) #dynamic_resume .resume-col--photo,
+    body:not(.resume-print-page) #dynamic_resume .resume-col--date,
+    body:not(.resume-print-page) #dynamic_resume .resume-col--spacer,
+    body:not(.resume-print-page) #dynamic_resume .resume-col--identity,
+    body:not(.resume-print-page) #dynamic_resume .resume-col--main,
+    body:not(.resume-print-page) #dynamic_resume .resume-col--detail-main,
+    body:not(.resume-print-page) #dynamic_resume .resume-col--meta {
         max-width: none;
         text-align: left;
     }
 
-    #dynamic_resume .titleblock h1 {
+    body:not(.resume-print-page) #dynamic_resume .titleblock h1 {
         font-size: 44px;
         margin-top: 16px;
     }
 
-    #dynamic_resume .titleblock h2 {
+    body:not(.resume-print-page) #dynamic_resume .titleblock h2 {
         font-size: 19px;
     }
 
-    #dynamic_resume .profile-pic {
+    body:not(.resume-print-page) #dynamic_resume .profile-pic {
         width: 124px;
         height: 124px;
     }
 
-    #dynamic_resume .resume-col--meta,
-    #dynamic_resume .resume-row--heading {
+    body:not(.resume-print-page) #dynamic_resume .resume-col--meta,
+    body:not(.resume-print-page) #dynamic_resume .resume-row--heading {
         margin-top: 8px;
     }
 }
@@ -512,32 +522,11 @@ body.resume-print-page footer {
 
     #dynamic_resume .titleblock {
         margin-top: -0.50in;
-        margin-bottom: 0.14in;
-    }
-
-    #dynamic_resume .titleblock h1 {
-        font-size: 37px;
     }
 
     #dynamic_resume .titleblock h2 {
         margin-top: 5px;
         font-size: 13.75px;
-    }
-
-    #dynamic_resume .profile-pic {
-        width: 98px;
-        height: 98px;
-    }
-
-    #dynamic_resume .resume-contact-line {
-        font-size: 10.75px;
-        line-height: 1.18;
-    }
-
-    #dynamic_resume h1 {
-        font-size: 13.75px;
-        line-height: 1.05;
-        letter-spacing: 0.02em;
     }
 
     #dynamic_resume h2 {
@@ -560,22 +549,8 @@ body.resume-print-page footer {
         padding-left: 1.25em;
     }
 
-    #dynamic_resume li {
-        margin-bottom: 2px;
-    }
-
-    #dynamic_resume .new-section {
-        margin-top: 0.02in;
-    }
-
     #dynamic_resume .new-section h1 {
         margin-top: 5px;
-        margin-bottom: 5px;
-        font-size: 27px;
-    }
-
-    #dynamic_resume .resume-row--heading {
-        margin-bottom: 1px;
     }
 
     /* Align company/title with the summary paragraph, not the bullet text. */
@@ -584,12 +559,7 @@ body.resume-print-page footer {
         left: -1.25em;
     }
 
-    #dynamic_resume .resume-row--detail,
-    #dynamic_resume .resume-row--simple {
-        margin-bottom: 10px;
-    }
-
-    /* WeasyPrint and browser print both paginate block flow more reliably than flex rows.
+    /* Browser print paginates block flow more reliably than flex rows.
      * Flatten detail/simple rows only in print so long job bodies can split across pages.
      */
     #dynamic_resume .resume-row--detail,
@@ -620,20 +590,6 @@ body.resume-print-page footer {
     /* Let long jobs flow across pages while keeping section headers intact. */
     #dynamic_resume .resume-item,
     #dynamic_resume .each {
-        break-inside: auto;
-        page-break-inside: auto;
-    }
-
-    #dynamic_resume .titleblock,
-    #dynamic_resume .new-section {
-        break-inside: avoid-page;
-        page-break-inside: avoid;
-    }
-
-    /* Allow job bodies to flow once the lead block has been placed. */
-    #dynamic_resume .resume-row--detail,
-    #dynamic_resume .resume-row--detail .resume-col--detail-main,
-    #dynamic_resume .resume-bullets {
         break-inside: auto;
         page-break-inside: auto;
     }
