@@ -14,7 +14,7 @@ window.ResumeData = {
                 "title": "Director, Software Engineering",
                 "time": "2024-Present",
                 "location": "Remote",
-                "description": "Umbra builds and operates a commercial SAR constellation and the software systems that plan missions, fly spacecraft, and deliver data products. I lead software engineering across GroundOps, scheduling, data, and developer experience while working closely with flight software, operations, and mission solutions. Selected accomplishments:",
+                "description": "Umbra builds and operates a commercial SAR constellation and the software systems that plan missions, fly spacecraft, and deliver data products. I lead a 40-person ground software engineering organization spanning mission control, satellite scheduling, radar data processing, customer ordering and delivery, and reliability and platform engineering, while partnering closely with flight software, operations, and mission solutions. Selected accomplishments:",
                 "bullets": [
                     {
                         "description": "Identified and closed critical capability gaps across data, GroundOps, scheduling, and DevOps by writing reqs, handling noisy pipelines, training managers on interviewing, and hiring high-impact engineers including Umbra's first Staff Data Engineer.",
