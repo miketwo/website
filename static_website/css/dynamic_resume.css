@@ -379,8 +379,26 @@ body.resume-print-page #dynamic_resume .resume-row--detail-follow {
     margin-top: 0;
 }
 
+#dynamic_resume .resume-role--additional {
+    margin-top: 7px;
+}
+
+#dynamic_resume .resume-row--role-heading {
+    margin-bottom: 3px;
+    align-items: baseline;
+}
+
+#dynamic_resume .resume-row--role-heading h2 {
+    margin-top: 0;
+}
+
+#dynamic_resume .resume-row--role-detail {
+    margin-bottom: 0;
+}
+
 #dynamic_resume .resume-bullets--lead,
-#dynamic_resume .resume-bullets--follow {
+#dynamic_resume .resume-bullets--follow,
+#dynamic_resume .resume-bullets--role {
     margin-bottom: 0;
 }
 
@@ -477,7 +495,7 @@ body.resume-print-page footer {
  */
 @page {
     size: letter;
-    margin: 0.75in 0.15in 0.75in 0.15in;
+    margin: 0.75in 0.15in;
 }
 
 @media print {
@@ -559,6 +577,18 @@ body.resume-print-page footer {
         left: -1.25em;
     }
 
+    #dynamic_resume .resume-row--role-heading .resume-col--detail-main {
+        position: relative;
+        left: -1.25em;
+    }
+
+    /* Move short, designated blocks intact when they do not fit on the current page. */
+    #dynamic_resume .resume-item.resume-item--print-keep-together,
+    #dynamic_resume .resume-section-group--education {
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+
     /* Browser print paginates block flow more reliably than flex rows.
      * Flatten detail/simple rows only in print so long job bodies can split across pages.
      */
@@ -573,8 +603,14 @@ body.resume-print-page footer {
     }
 
     #dynamic_resume .resume-row--detail .resume-col--detail-main,
+    /* Simple rows hide their meta column in print, so use the released width. */
     #dynamic_resume .resume-row--simple .resume-col--detail-main {
         margin-left: calc(17% + 14px);
+    }
+
+    #dynamic_resume .resume-row--simple .resume-col--detail-main {
+        width: calc(83% - 14px);
+        max-width: calc(83% - 14px);
     }
 
     #dynamic_resume .resume-row--simple .resume-col--meta {

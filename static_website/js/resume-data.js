@@ -76,6 +76,7 @@ window.ResumeData = {
                 "title": "Father",
                 "time": "early 2022",
                 "location": "St. Louis, MO",
+                "printKeepTogether": true,
                 "description": "Took a short break to support my new family. Selected Accomplishments:",
                 "bullets": [
                     {
@@ -134,31 +135,51 @@ window.ResumeData = {
             },
             {
                 "name": "1904 Labs",
-                "title": "Director, Modern Software Engineering",
                 "time": "2017-2021",
                 "location": "St. Louis, MO",
-                "description": "1904labs helps leaders digitally transform their business by implementing modern software and data solutions. The Modern Software Engineering Practice contains all Full Stack, DevOps, and Mobile Engineers in the company. Selected accomplishments:",
-                "bullets": [
+                "roles": [
                     {
-                        "description": "Successfully managed a substantial personnel budget exceeding $5 million and a discretionary budget exceeding $40,000, ensuring optimal allocation of resources for the Modern Software Engineering Practice.",
-                        "tags": ["Leadership"]
+                        "title": "Director, Modern Software Engineering",
+                        "description": "1904labs helps leaders digitally transform their business by implementing modern software and data solutions. The Modern Software Engineering Practice contains all Full Stack, DevOps, and Mobile Engineers in the company. Selected accomplishments:",
+                        "bullets": [
+                            {
+                                "description": "Successfully managed a substantial personnel budget exceeding $5 million and a discretionary budget exceeding $40,000, ensuring optimal allocation of resources for the Modern Software Engineering Practice.",
+                                "tags": ["Leadership"]
+                            },
+                            {
+                                "description": "Pioneered the creation of the Study Group Program, a groundbreaking initiative that facilitated knowledge reuse and mentorship, resulting in significant value generation for the organization.",
+                                "tags": ["Leadership"]
+                            },
+                            {
+                                "description": "Implemented a standardized Contribution Reviews process, empowering individuals with a self-directed approach that preserved autonomy while fostering personal and professional growth.",
+                                "tags": ["Leadership"]
+                            },
+                            {
+                                "description": "Took ownership of weekly Leadership Touchpoint meetings, facilitating effective communication and coordination of strategic initiatives within the Modern Software Engineering Practice.",
+                                "tags": ["Leadership"]
+                            },
+                            {
+                                "description": "Conducted screenings, interviews, and made hiring decisions for the Practice.",
+                                "tags": ["Leadership"]
+                            }
+                        ]
                     },
                     {
-                        "description": "Pioneered the creation of the Study Group Program, a groundbreaking initiative that facilitated knowledge reuse and mentorship, resulting in significant value generation for the organization.",
-                        "tags": ["Leadership"]
-                    },
-                    {
-                        "description": "Implemented a standardized Contribution Reviews process, empowering individuals with a self-directed approach that preserved autonomy while fostering personal and professional growth.",
-                        "tags": ["Leadership"]
-                    },
-                    {
-                        "description": "Took ownership of weekly Leadership Touchpoint meetings, facilitating effective communication and coordination of strategic initiatives within the Modern Software Engineering Practice.",
-                        "tags": ["Leadership"]
-                    },
-                    {
-                        "description": "Conducted screenings, interviews, and made hiring decisions for the Practice.",
-                        "tags": ["Leadership"]
-                    },
+                        "title": "Senior DevOps Engineer",
+                        "description": "Embedded with three data engineers on Unified Transactions, a high-volume, low-latency project for a global payment network. Selected accomplishments:",
+                        "bullets": [
+                            {
+                                "description": "Learned Scala and implemented recursive depth-first-search matching in Spark and HBase to unify out-of-order payment events at a measured peak of 100,000 transactions per second, significantly accelerating transaction and chargeback investigations for banks.",
+                                "skills": "[Scala, Spark, HBase]",
+                                "tags": ["Software"]
+                            },
+                            {
+                                "description": "Identified an organization-wide test-data gap and built a horizontally parallel Python data generator that produced billions of production-realistic events, exposing performance bottlenecks and helping establish production readiness.",
+                                "skills": "[Python, Spark, HBase, ISO 8583]",
+                                "tags": ["Leadership", "Software"]
+                            }
+                        ]
+                    }
                 ]
             },
             {
@@ -436,7 +457,7 @@ window.ResumeData = {
                         "tags": ["Software"]
                     },
                     {
-                        "description": "Noteworthy academic projects:<br /> - Path planning program (using A* search) for course in Artificial Intelligence<br /> - Sound localization using 3 microphones and LabView for “Sensing and Planning in Robotics” course<br /> - GNC engineer for LEAPFROG project – a hovering jet-based lunar-lander. First flight in March 2009.",
+                        "description": "Noteworthy academic projects:<br /> - Path planning program (using A* search) for course in Artificial Intelligence<br /> - Sound localization using 3 microphones and LabView for “Sensing and Planning in Robotics”<br /> - GNC engineer for LEAPFROG project – a hovering jet-based lunar-lander. Flew March 2009.",
                         "tags": ["Aerospace", "Software"]
                     }]
             },
@@ -447,7 +468,7 @@ window.ResumeData = {
                 "degree": "B.S. Engineering Physics, Minor Mathematics",
                 "bullets": [
                     {
-                        "description": "Senior Design team placed 1st and 3rd in two separate competitions for designing a reusable cargo shuttle between Earth and Mars.",
+                        "description": "Senior Design team placed 1st and 3rd in two separate NASA RASC-AL competitions.",
                         "tags": ["Aerospace"]
                     },
                     {
