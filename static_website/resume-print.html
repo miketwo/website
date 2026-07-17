@@ -69,7 +69,8 @@
         </div>
       </div>
 
-      <% _.each( rc.experience, function(job){ var roles = job.roles && job.roles.length ? job.roles : [job]; var primaryRole = roles[0]; var primaryBullets = primaryRole.bullets || []; var leadBullet = primaryBullets[0]; var remainingBullets = primaryBullets.slice(1); %>
+      <% function splitLocation(location) { var parts = (location || '').split(/,\s*/); var region = parts.length > 1 ? parts.pop() : ''; return { city: parts.join(', ') + (region ? ',' : ''), region: region }; } %>
+      <% _.each( rc.experience, function(job){ var roles = job.roles && job.roles.length ? job.roles : [job]; var primaryRole = roles[0]; var primaryBullets = primaryRole.bullets || []; var leadBullet = primaryBullets[0]; var remainingBullets = primaryBullets.slice(1); var jobLocation = splitLocation(job.location); %>
         <div class="each resume-item<%= job.printKeepTogether ? ' resume-item--print-keep-together' : '' %>">
         <div class="resume-item-lead">
           <div class="row resume-row resume-row--heading">
@@ -81,7 +82,7 @@
               <h2><%- primaryRole.title %></h2>
             </div>
             <div class="three columns right resume-col resume-col--meta">
-              <h1><%- job.location %></h1>
+              <h1 class="resume-location"><span class="resume-location-city"><%- jobLocation.city %></span><% if (jobLocation.region) { %> <span class="resume-location-region"><%- jobLocation.region %></span><% } %></h1>
             </div>
           </div>
           <div class="row resume-row resume-row--detail resume-row--detail-lead">
@@ -149,7 +150,7 @@
           <h1>Education</h1>
         </div>
       </div>
-      <% _.each(rc.education, function( ed ){ %>
+      <% _.each(rc.education, function( ed ){ var educationLocation = splitLocation(ed.location); %>
         <div class="each resume-item">
         <div class="row resume-row resume-row--heading">
           <div class="three columns resume-col resume-col--date">
@@ -160,7 +161,7 @@
             <h2><%- ed.degree %></h2>
           </div>
           <div class="three columns right resume-col resume-col--meta">
-            <h1><%- ed.location %></h1>
+            <h1 class="resume-location"><span class="resume-location-city"><%- educationLocation.city %></span><% if (educationLocation.region) { %> <span class="resume-location-region"><%- educationLocation.region %></span><% } %></h1>
           </div>
         </div>
 

@@ -75,7 +75,7 @@ window.ResumeData = {
                 "name": "Aherne, Inc.",
                 "title": "Father",
                 "time": "early 2022",
-                "location": "St. Louis, MO",
+                "location": "Saint Louis, MO",
                 "printKeepTogether": true,
                 "description": "Took a short break to support my new family. Selected Accomplishments:",
                 "bullets": [
@@ -136,7 +136,7 @@ window.ResumeData = {
             {
                 "name": "1904 Labs",
                 "time": "2017-2021",
-                "location": "St. Louis, MO",
+                "location": "Saint Louis, MO",
                 "roles": [
                     {
                         "title": "Director, Modern Software Engineering",

@@ -342,6 +342,16 @@ body.resume-print-page #dynamic_resume .resume-row--detail-follow {
     font-weight: 900;
 }
 
+#dynamic_resume .resume-location-city,
+#dynamic_resume .resume-location-region {
+    white-space: nowrap;
+}
+
+#dynamic_resume .resume-col--meta .resume-location {
+    font-size: 15px;
+    letter-spacing: 0.01em;
+}
+
 #dynamic_resume .new-section {
     margin-top: 0.08in;
 }
@@ -580,6 +590,13 @@ body.resume-print-page footer {
     #dynamic_resume .resume-row--role-heading .resume-col--detail-main {
         position: relative;
         left: -1.25em;
+    }
+
+    /* Keep common locations on one line while preserving city names on longer ones. */
+    #dynamic_resume .resume-col--meta .resume-location {
+        font-size: 13px;
+        letter-spacing: 0;
+        white-space: nowrap;
     }
 
     /* Move short, designated blocks intact when they do not fit on the current page. */
