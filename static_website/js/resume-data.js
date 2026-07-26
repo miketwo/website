@@ -47,26 +47,22 @@ window.ResumeData = {
                 "title": "Senior Director, Practices & Solutions",
                 "time": "2022-2023",
                 "location": "Saint Louis, MO",
-                "description": "1904labs helps leaders digitally transform their business by implementing modern software and data solutions. Responsibilities included oversight of all engineers and solutions. This position reported to the Owner. Selected accomplishments:",
+                "description": "1904labs builds software and data solutions for enterprise clients. I reported to the owner with responsibility for the company's technical practices and solutions. Selected accomplishments:",
                 "bullets": [
                     {
-                        "description": "Lead and managed a dynamic team of approximately 70 engineers, ensuring the delivery of exceptional service to multiple enterprise customers.",
+                        "description": "Led approximately 70 engineers across Modern Software Engineering, Data Engineering, and Decision Science (applied data science), with three practice directors reporting to me and responsibility for delivery escalations below the owner.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Orchestrated the strategic roadmap, providing guidance on the go-to-market strategy, and effectively coordinated sales and marketing initiatives for our flagship solution: AI-Enabled Customer Service.",
+                        "description": "Set the strategic roadmap and guided the go-to-market strategy for AI-Enabled Customer Service, working with Sales and Marketing on positioning, partnerships, and enterprise pursuits.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Spearheaded transformative changes to the Business Development and Sales departments, resulting in expanded career progression opportunities for engineers.",
+                        "description": "Coordinated the technical practices with Delivery, IT, Marketing, Business Development, and Human-Centered Design on solution development, demand generation, career paths, and market offerings.",
                         "tags": ["Leadership"]
                     },
                     {
-                        "description": "Mentored and coached directors on effective leadership practices, fostering their growth and development, while providing valuable career guidance to individual engineers.",
-                        "tags": ["Leadership"]
-                    },
-                    {
-                        "description": "Garnered extensive acclaim for exceptional alignment and delegation efforts, enhancing overall team efficiency and productivity.",
+                        "description": "Mentored and coached three practice directors on leadership and provided career guidance to individual engineers.",
                         "tags": ["Leadership"]
                     }
                 ]
@@ -143,19 +139,19 @@ window.ResumeData = {
                         "description": "1904labs helps leaders digitally transform their business by implementing modern software and data solutions. The Modern Software Engineering Practice contains all Full Stack, DevOps, and Mobile Engineers in the company. Selected accomplishments:",
                         "bullets": [
                             {
-                                "description": "Successfully managed a substantial personnel budget exceeding $5 million and a discretionary budget exceeding $40,000, ensuring optimal allocation of resources for the Modern Software Engineering Practice.",
+                                "description": "Managed a personnel budget exceeding $5 million and a discretionary budget exceeding $40,000 for the Modern Software Engineering Practice.",
                                 "tags": ["Leadership"]
                             },
                             {
-                                "description": "Pioneered the creation of the Study Group Program, a groundbreaking initiative that facilitated knowledge reuse and mentorship, resulting in significant value generation for the organization.",
+                                "description": "Created and sponsored a peer-led Study Group Program for technical learning, knowledge sharing, and mentorship across the practice.",
                                 "tags": ["Leadership"]
                             },
                             {
-                                "description": "Implemented a standardized Contribution Reviews process, empowering individuals with a self-directed approach that preserved autonomy while fostering personal and professional growth.",
+                                "description": "Designed a standardized Contribution Review process in which engineers assembled self-directed performance packets against a shared career framework.",
                                 "tags": ["Leadership"]
                             },
                             {
-                                "description": "Took ownership of weekly Leadership Touchpoint meetings, facilitating effective communication and coordination of strategic initiatives within the Modern Software Engineering Practice.",
+                                "description": "Led weekly Leadership Touchpoint meetings using prioritized agendas, minutes, and action tracking to coordinate work across the practice.",
                                 "tags": ["Leadership"]
                             },
                             {
