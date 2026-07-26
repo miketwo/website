@@ -48,7 +48,26 @@ var DynamicResume = function ($el) {
     });
 
     if (pageMode === "web" && $("#buttons").length) {
-        $("#buttons").sticky({topSpacing: 0});
+        var $buttons = $("#buttons");
+        var stickyToolbarQuery = window.matchMedia("(min-width: 768px)");
+
+        function updateStickyToolbar(query) {
+            var isSticky = $buttons.parent().hasClass("sticky-wrapper");
+
+            if (query.matches && !isSticky) {
+                $buttons.sticky({topSpacing: 0});
+            } else if (!query.matches && isSticky) {
+                $buttons.unstick();
+            }
+        }
+
+        updateStickyToolbar(stickyToolbarQuery);
+
+        if (stickyToolbarQuery.addEventListener) {
+            stickyToolbarQuery.addEventListener("change", updateStickyToolbar);
+        } else {
+            stickyToolbarQuery.addListener(updateStickyToolbar);
+        }
     }
 
     return {

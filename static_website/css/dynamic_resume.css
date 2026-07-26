@@ -285,6 +285,10 @@ body.resume-print-page #dynamic_resume .resume-row--detail-follow {
     line-height: 1.25;
 }
 
+#dynamic_resume .resume-contact-line--clearance {
+    white-space: nowrap;
+}
+
 #dynamic_resume h1 {
     margin: 0;
     font: 18px/1.1 Constantine, 'opensans-bold', sans-serif;
@@ -448,7 +452,7 @@ body.resume-print-page footer {
 }
 
 @media only screen and (max-width: 767px) {
-    body:not(.resume-print-page) .resume-toolbar {
+    body:not(.resume-print-page) #buttons {
         position: static;
         padding: 12px;
     }
@@ -497,6 +501,10 @@ body.resume-print-page footer {
     body:not(.resume-print-page) #dynamic_resume .resume-col--meta,
     body:not(.resume-print-page) #dynamic_resume .resume-row--heading {
         margin-top: 8px;
+    }
+
+    body:not(.resume-print-page) #dynamic_resume .resume-contact-line--clearance {
+        white-space: normal;
     }
 }
 

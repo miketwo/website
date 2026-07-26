@@ -32,7 +32,7 @@
     <div class="btn-group">
       <a class="btn btn-info" href="/">Home</a>
       <a class="btn btn-info" href="resume-print.html" target="_blank" rel="noopener">Printable View</a>
-      <a class="btn btn-info" href="downloads/resume.pdf?v=d075eaa3e88c4e5e" target="_blank" rel="noopener">Download PDF</a>
+      <a class="btn btn-info" href="downloads/resume.pdf?v=3d316acaf5f88ab4" target="_blank" rel="noopener">Download PDF</a>
     </div>
 
     <div class="btn-group">
@@ -67,7 +67,7 @@
                   <div class="resume-contact-line"><%- rc.biographical.website %></div>
                   <div class="resume-contact-line"><%- rc.biographical.address %></div>
                   <div class="resume-contact-line"><%- rc.biographical.citizenship %></div>
-                  <div class="resume-contact-line"><%- rc.biographical.clearance %></div>
+                  <div class="resume-contact-line resume-contact-line--clearance"><%- rc.biographical.clearance %></div>
           </div>
       </div>
 
@@ -202,7 +202,7 @@
           </div>
           <div class="nine columns resume-col resume-col--detail-main">
             <h1><a href="<%- pub.link %>"><%- pub.name %></a></h1>
-            <p><%- pub.authors %><%- pub.serial %><%- pub.description %></p>
+            <p><%- pub.authors %> <%- pub.serial %> <%- pub.description %></p>
           </div>
         </div>
       </div>
