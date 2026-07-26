@@ -68,6 +68,10 @@ This writes:
 Important constraint:
 
 - the premade PDF is driven by print CSS, not a separate hand-tuned PDF layout
+- the export script fingerprints the PDF content in every site link (for example,
+  `resume.pdf?v=abc123...`) so a newly deployed resume cannot reuse an older
+  cached PDF
+- do not edit the PDF version query by hand; rerun the export script
 
 ## Tooling Lessons
 

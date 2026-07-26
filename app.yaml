@@ -5,11 +5,17 @@ handlers:
 - url: /
   static_files: static_website/index.html
   upload: static_website/index.html
+  expiration: "0s"
+  http_headers:
+    Cache-Control: "no-cache, no-store, must-revalidate"
 
 #serve home page in case index.html is requested
 - url: /index.html
   static_files: static_website/index.html
   upload: static_website/index.html
+  expiration: "0s"
+  http_headers:
+    Cache-Control: "no-cache, no-store, must-revalidate"
 
 # Redirect to Educational Videos
 - url: /learn/mocks
@@ -23,11 +29,26 @@ handlers:
 - url: /resume
   static_files: static_website/resume.html
   upload: static_website/resume.html
+  expiration: "0s"
+  http_headers:
+    Cache-Control: "no-cache, no-store, must-revalidate"
 
 # Print-oriented resume preview
 - url: /resume-print.html
   static_files: static_website/resume-print.html
   upload: static_website/resume-print.html
+  expiration: "0s"
+  http_headers:
+    Cache-Control: "no-cache, no-store, must-revalidate"
+
+# Keep the stable PDF URL available for old bookmarks, but never let browsers
+# or App Engine's frontend cache reuse an obsolete export.
+- url: /downloads/resume\.pdf
+  static_files: static_website/downloads/resume.pdf
+  upload: static_website/downloads/resume.pdf
+  expiration: "0s"
+  http_headers:
+    Cache-Control: "no-cache, no-store, must-revalidate"
 
 #all static files return file if found,
 #otherwise the default 404 page so it can be handled by sites that link

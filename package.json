@@ -2,7 +2,9 @@
   "name": "miketwo-website-dev-tools",
   "private": true,
   "scripts": {
+    "resume:export": "./scripts/export-resume-pdf.sh",
     "resume:inspect": "node scripts/inspect-resume.mjs",
-    "resume:inspect:print": "node scripts/inspect-resume.mjs --page=resume-print.html --media=print"
+    "resume:inspect:print": "node scripts/inspect-resume.mjs --page=resume-print.html --media=print",
+    "resume:version:check": "node scripts/version-resume-pdf.mjs --check"
   }
 }

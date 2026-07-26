@@ -14,3 +14,5 @@ node "${ROOT_DIR}/scripts/inspect-resume.mjs" \
   --pdf-output="${OUTPUT_PATH}" \
   --screenshot-output="${ROOT_DIR}/.artifacts/resume/resume-print-print.png" \
   --metrics-output="${ROOT_DIR}/.artifacts/resume/resume-print-print.json"
+
+node "${ROOT_DIR}/scripts/version-resume-pdf.mjs"
